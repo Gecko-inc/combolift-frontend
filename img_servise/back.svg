@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="14px" viewBox="0 0 23 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>DCAB46A2-2B31-4A8D-9F14-4B3555251F12</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.823992 0 0 0 0 0.823992 0 0 0 0 0.823992 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Desktop-1920px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Default-Template" transform="translate(-347.000000, -149.000000)">
+            <g id="back" transform="translate(348.246924, 148.000000)" filter="url(#filter-1)">
+                <g transform="translate(-0.000000, 2.407391)">
+                    <line x1="1.77353088" y1="5.61306359" x2="20.7530763" y2="5.59260904" id="Line-2" stroke="#FFFFFF" stroke-width="2"></line>
+                    <polyline id="Path-48" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" points="5.59260904 0 1.8189894e-12 5.59260904 5.59260904 11.1852181"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
