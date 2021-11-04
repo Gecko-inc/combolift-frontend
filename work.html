@@ -13,34 +13,47 @@
     <title>Комболифт</title>
 </head>
 <body>
+
+<!--MENU-->
+
     <header>
+        <a href="" id="link_logo">
             <div id="logo">
                 <img src="img_service/logo.svg" alt="logo">
             </div>
-            <div id="menu">
-                <ul>
-                    <li>УСЛУГИ</li>
-                    <li>ОБОРУДОВАНИЕ</li>
-                    <li>ПРЕИМУЩЕСТВА</li>
-                    <li>О НАС</li>
-                    <li>НАШИ КЛИЕНТЫ</li>
-                    <li>FAQ</li>
-                    <li>КОНТАКТЫ</li>
-                </ul>
-            </div>
+        </a>
+        <div id="menu">
+            <ul>
+                <li><a href="">УСЛУГИ</a></li>
+                <li><a href="">ОБОРУДОВАНИЕ</a></li>
+                <li><a href="">ПРЕИМУЩЕСТВА</a></li>
+                <li><a href="">О НАС</a></li>
+                <li><a href="">НАШИ КЛИЕНТЫ</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
     </header>
 
-    <div id="content">
-        <div id="home_arrow">
-            <img src="img_service/back.svg" alt="back_arrow">
-            <div>ГЛАВНАЯ</div>
-        </div>
+
+
+<!--БОЛЬШОЙ ТЕКСТ НА СТРАНИЦЕ УСЛУГ-->
+
+    <div class="content">
+
+        <a href="" id="link_home_arrow">
+            <div id="home_arrow">
+
+                    <img src="img_service/back.svg" alt="back_arrow">
+                    <div>ГЛАВНАЯ</div>
+            </div>
+        </a>
 
         <div class="title">
             ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ ЛИФТОВ И ЭСКАЛАТОРОВ
         </div>
 
-        <section>
+        <section id="information">
             <div id="item1">
                 <img class="item_photo" src="img_service/1photo.jpg" alt="item_photo">
             </div>
@@ -67,7 +80,34 @@
                 <img class="item_photo" src="img_service/montag.jpg" alt="item_photo">
             </div>
         </section>
+    </div>
 
+
+<!--ОСТАВИТЬ ЗАЯВКУ-->
+        <section id="sendApplication">
+            <div id="titleSendApplication">
+                Оставьте заявку на техническое обслуживание
+            </div>
+            <form id="form_send" action="#">
+
+                    <input type="text" name="name" id="name" placeholder="Ваше имя *">
+
+                    <input type="tel" name="phone" id="phone" placeholder="Ваш телефон *">
+
+                    <input type="email" name="email" id="email" placeholder="Ваш e-mail">
+
+                    <textarea name="text" cols="1" rows="1" id="comment" placeholder="Комментарий"></textarea>
+
+                    <input type="file" name="file" id="sendFile">
+
+            </form>
+        </section>
+
+
+
+
+<!--ОБОРУДОВАНИЕ-->
+    <div class="content">
         <div id="equipment">
             <div id="rrr">
                 ОБОРУДОВАНИЕ
@@ -109,9 +149,9 @@
             </div>
         </div>
 
-
-
     </div>
+
+
 
     <footer></footer>
 
