@@ -43,7 +43,7 @@ header > #menu > ul > li{
 
 #content {
     margin: 0 12% 0 12%;
-    background-color: bisque;
+    /*background-color: bisque;*/
 
 }
 #home_arrow {
@@ -110,7 +110,8 @@ section {
 }
 
 #equipment{
-
+    position: relative;
+    margin-top: 144px;
 }
 
 #equip_title {
@@ -124,6 +125,9 @@ section {
 
 
 #rrr {
+    position: absolute;
+    z-index: -1;
+    top: -48px;
     right: 0;
     font-size: 80px;
     color: #ECEEF0;
@@ -147,7 +151,7 @@ section {
 
 }
 #goods> div, p{
-    background-color: peru;
+    /*background-color: peru;*/
     max-width: 391px;
     min-height: 489px;
 }
