@@ -43,6 +43,7 @@ header > #menu > ul > li{
 
 #content {
     margin: 0 12% 0 12%;
+    background-color: bisque;
 
 }
 #home_arrow {
@@ -74,7 +75,7 @@ section {
     row-gap: 85px;
     font-size: 16px;
     color: #222222;
-    margin: 64px 0 96px 0;
+    margin: 64px 0 0 0;
 }
 #item1 {
     grid-row-start: 1;
@@ -108,7 +109,11 @@ section {
     grid-column-end: 13;
 }
 
-#equipment > #equip_title {
+#equipment{
+
+}
+
+#equip_title {
     font-size: 40px;
     color: #222222;
     font-weight: 700;
@@ -116,13 +121,59 @@ section {
     min-height: 96px;
     margin-bottom: 72px;
 }
+
+
+#rrr {
+    right: 0;
+    font-size: 80px;
+    color: #ECEEF0;
+    font-weight: 700;
+    line-height: 97px;
+    min-height: 97px;
+
+}
+
 #goods {
     display: grid;
-    grid-template-rows: repeat(3, 489px);
-    grid-template-columns: repeat(auto-fill, 391px);
-    justify-content: space-between;
+    /*grid-template-rows: repeat(3, 489px);*/
+    grid-template-columns: repeat(auto-fill, minmax(auto, 391px));
+    justify-content: space-around;
+    column-gap: 8px;
     row-gap: 64px;
+
+
+    /*grid-template-columns: repeat(3, minmax(auto, 391px));*/
+    /*justify-content: space-between;*/
+
 }
-#goods> p {
+#goods> div, p{
     background-color: peru;
+    max-width: 391px;
+    min-height: 489px;
+}
+
+.oneGood{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.goodTitle {
+    font-size: 24px;
+    color: #222222;
+    font-weight: 700;
+    line-height: 30px;
+    min-height: 60px;
+}
+
+.goodDescription {
+    font-size: 15px;
+    color: #666666;
+    font-weight: 500;
+    line-height: 22px;
+    min-height: 110px;
+}
+
+.goodPhoto{
+    height: 278px;
 }
