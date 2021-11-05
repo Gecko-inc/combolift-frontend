@@ -2,7 +2,7 @@
 @import '../../interface.css';
 @import '../../footer.css';
 @import '../../header.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@100;300;400;700&display=swap');
 
 /* Секции страницы */
 body {
@@ -15,7 +15,7 @@ a {
     text-decoration: none;
 }
 
-header{
+#head{
     position: sticky;
     top: 0;
     z-index: 1;
@@ -37,7 +37,7 @@ header > #menu {
     width: 90%;
 }
 
-header > #menu > ul {
+header > #menu > #ul_menu {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -46,7 +46,7 @@ header > #menu > ul {
     padding: 5px 0 5px 0;
 }
 
-header > #menu > ul > li{
+header > #menu > #ul_menu > li{
     display: inline;
     color: #FFFFFF;
     font-size: 15px;
@@ -55,7 +55,7 @@ header > #menu > ul > li{
     font-family: 'Montserrat';
 
 }
-header > #menu > ul > li > a{
+header > #menu > #ul_menu > li > a{
     color: #FFFFFF;
 }
 
@@ -155,7 +155,7 @@ header > #menu > ul > li > a{
 
 /*=====================ОСТАВИТЬ ЗАЯВКУ*/
 
-#sendApplication {
+.backgroundApplication{
     background: url(../../../img_service/back_1.jpg), rgba(10, 110, 110, 0.9) no-repeat;
     background-blend-mode: color;
     background-size: cover;
@@ -166,7 +166,7 @@ header > #menu > ul > li > a{
 
 }
 
-#titleSendApplication {
+.titleSendApplication {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 40px;
@@ -176,62 +176,269 @@ header > #menu > ul > li > a{
     margin: 80px 0 44px 0;
 }
 
-#form_send{
+#form{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 60px);
+    grid-template-rows: repeat(4, 60px);
     gap: 24px;
 
 }
 
-#name, #phone, #email, #comment, #sendFile {
+.form_name, .form_phone, .form_email, .form_comment, #sendFile {
+    border: none;
+    font-family: 'Roboto';
+    font-weight: 300;
+    padding-left: 25px;
+    padding-right: 25px;
 
 }
 
-#name {
+.form_name {
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 1;
     grid-column-end: 5;
 }
-#phone {
+.form_phone {
      grid-row-start: 2;
      grid-row-end: 2;
      grid-column-start: 1;
      grid-column-end: 5;
 }
 
-#email {
+.form_email {
     grid-row-start: 3;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 5;
 }
-#comment {
+.form_comment {
+    padding-top: 20px;
+    padding-bottom: 20px;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 5;
     grid-column-end: 13;
 }
 
-#sendFile {
+
+
+/*валидация полей НАЧАЛО*/
+
+/*-----------------------СТИЛИ ДЛЯ НЕЗАПОЛНЕННЫХ ПОЛЕЙ ПОЛЕЙ*/
+
+.form_name._error, .form_phone._error, .form_email._error, .form_comment._error{
+    background-color: #FFEBE8;
+}
+
+/*Chrome 57 и Firefox 51*/
+.form_name._red::placeholder, .form_phone._red::placeholder, .form_email._red::placeholder, .form_comment._red::placeholder{
+    color: #921202;
+}
+/*Firefox новые версии*/
+.form_name._red::-moz-placeholder, .form_phone._red::-moz-placeholder, .form_email._red::-moz-placeholder, .form_comment._red::-moz-placeholder{
+    color: #921202;
+}
+/*Internet Explorer*/
+.form_name._red:-ms-input-placeholder, .form_phone._red:-ms-input-placeholder, .form_email._red:-ms-input-placeholder, .form_comment._red:-ms-input-placeholder{
+    color: #921202;
+}
+/*Microsoft Edge*/
+.form_name._red::-ms-input-placeholder, .form_phone._red::-ms-input-placeholder, .form_email._red::-ms-input-placeholder, .form_comment._red::-ms-input-placeholder{
+    color: #921202;
+}
+/*Chrome, Opera и Safari*/
+.form_name._red::-webkit-input-placeholder, .form_phone._red::-webkit-input-placeholder, .form_email._red::-webkit-input-placeholder, .form_comment._red::-webkit-input-placeholder{
+    color: #921202;
+}
+/*Firefox с 4 по 19 версии*/
+.form_name._red-moz-placeholder, .form_phone._red-moz-placeholder, .form_email._red-moz-placeholder, .form_comment._red-moz-placeholder{
+    color: #921202;
+}
+
+/*валидация полей КОНЕЦ*/
+
+
+
+#container_form {
     grid-row-start: 3;
     grid-row-end: 3;
     grid-column-start: 5;
     grid-column-end: 13;
+    padding: 0;
+
 }
- input, textarea {
+input, textarea {
      width: 100%;
      height: 100%;
      border-radius: 8px;
+}
+
+#recapture {
+    background-color: orange;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#explanation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 11;
+
+}
+
+#requiredFields, #agree {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+#submitApplication {
+    background-color: #D53D0F;
+    border-radius: 8px;
+    height: 100%;
+    width: 180px;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 11;
+    grid-column-end: 13;
+    border: 0;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#submitApplication:hover {
+     background-color: #f45627;
  }
 
 
+.hide {
+     width: 0.1px;
+     height: 0.1px;
+     opacity: 0;
+     overflow: hidden;
+     position: absolute;
+     z-index: -1;
+}
+
+#container_form {
+    display: flex;
+    height: 24px;
+    justify-content: space-between;
+    align-items: center;
+    width: 447px;
+}
+
+#label_form {
+    display: flex;
+    height: 24px;
+    justify-content: space-between;
+    align-items: center;
+    width: 188px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+#formats {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    width: 251px;
+    height: 24px;
+    line-height: 24px;
+    color: #ACACAC;
+}
+
+/*label:hover + #ee{*/
+/*     display: none;*/
+/* }*/
+
+/*label:hover {*/
+/*     background-color: green;*/
+/* }*/
+
+/*#f:focus + label {*/
+/*    outline: 1px dotted #000;*/
+/*    outline: -webkit-focus-ring-color auto 5px;*/
+/*}*/
+
+/*#f:focus + label,*/
+/*#f + label:hover {*/
+/*    background-color: red;*/
+/*}*/
 
 
 
 
 
+
+/*============================УДАЧНАЯ ОТПРАВКА ФОРМЫ*/
+
+#successApplication {
+    display: flex;
+    width: 607px;
+    column-gap: 24px;
+    margin-top: 137px;
+}
+
+#circleLogo {
+    background-color: #D53D0F;
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+    margin-top: 10px;
+}
+
+#successText {
+    display: flex;
+    flex-direction: column;
+    height: 124px;
+    width: 519px;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+#thank {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 700;
+    height: 48px;
+    line-height: 48px;
+
+}
+
+#thankText {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+    height: 26px;
+    line-height: 26px;
+}
+
+#refresh {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+    height: 26px;
+    line-height: 26px;
+    cursor: pointer;
+}
 
 
 /*=============================ОБОРУДОВАНИЕ*/

@@ -1,4 +1,5 @@
 // Служебные переменные
+
 const d = document;
 const body = d.querySelector('body');
 

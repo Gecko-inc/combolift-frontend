@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Сбрасываем стандартные стили -->
     <link rel="stylesheet" href="./style/normalize.css">
+    <script src="js/work.js"></script>
     <!-- Анимация -->
     <link rel="stylesheet" href="./style/aos.css">
     <!-- Подключаем стили -->
@@ -16,21 +17,21 @@
 
 <!--MENU-->
 
-    <header>
+    <header id="head">
         <a href="" id="link_logo">
             <div id="logo">
                 <img src="img_service/logo.svg" alt="logo">
             </div>
         </a>
         <div id="menu">
-            <ul>
-                <li><a href="">УСЛУГИ</a></li>
-                <li><a href="">ОБОРУДОВАНИЕ</a></li>
-                <li><a href="">ПРЕИМУЩЕСТВА</a></li>
-                <li><a href="">О НАС</a></li>
-                <li><a href="">НАШИ КЛИЕНТЫ</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">КОНТАКТЫ</a></li>
+            <ul id="ul_menu">
+                <li><a class="link_menu" href="">УСЛУГИ</a></li>
+                <li><a class="link_menu" href="">ОБОРУДОВАНИЕ</a></li>
+                <li><a class="link_menu" href="">ПРЕИМУЩЕСТВА</a></li>
+                <li><a class="link_menu" href="">О НАС</a></li>
+                <li><a class="link_menu" href="">НАШИ КЛИЕНТЫ</a></li>
+                <li><a class="link_menu" href="">FAQ</a></li>
+                <li><a class="link_menu" href="">КОНТАКТЫ</a></li>
             </ul>
         </div>
     </header>
@@ -84,23 +85,63 @@
 
 
 <!--ОСТАВИТЬ ЗАЯВКУ-->
-        <section id="sendApplication">
-            <div id="titleSendApplication">
+        <section class="backgroundApplication">
+            <div class="titleSendApplication">
                 Оставьте заявку на техническое обслуживание
             </div>
-            <form id="form_send" action="#">
+            <form id="form" action="#" enctype="multipart/form-data" method="post">
 
-                    <input type="text" name="name" id="name" placeholder="Ваше имя *">
+                <input type="text" name="name" id="name" placeholder="Ваше имя *" class="form_name _req">
+                <label for="name"></label>
 
-                    <input type="tel" name="phone" id="phone" placeholder="Ваш телефон *">
+                <input type="tel" name="phone" id="phone" placeholder="Ваш телефон *" class="form_phone _req" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
 
-                    <input type="email" name="email" id="email" placeholder="Ваш e-mail">
+                <input type="email" name="email" id="email" placeholder="Ваш e-mail" class="form_email _req _email">
 
-                    <textarea name="text" cols="1" rows="1" id="comment" placeholder="Комментарий"></textarea>
+                <textarea name="text" cols="1" rows="1" id="comment" placeholder="Комментарий" class="form_comment _req"></textarea>
 
-                    <input type="file" name="file" id="sendFile">
+                <div id="container_form">
+                    <input type="file" name="file" id="f" class="hide" multiple accept=".jpg, .jpeg, .png, .pdf, .doc, .xls">
+                    <label  for = "f" id="label_form"><img src="img_service/attach.svg" alt="attach"><div>ПРИКРЕПИТЬ ФАЙЛ</div></label >
+                    <div id="formats">JPG, PNG, PDF, DOC, XLS не более 5 Мб</div>
+                    <div id="formPreview" class="file_preview">
+                        k
+                    </div>
+                </div>
+
+
+
+                <div id="recapture">
+                    recapture
+                </div>
+
+                <div id="explanation">
+                    <div id="requiredFields">* — поля, обязательные для заполнения
+                    </div>
+                    <div id="agree">Нажимая кнопку "Отправить", Вы принимаете условия Политики конфиденциальности
+                    </div>
+                </div>
+
+                <button id="submitApplication" class="form_button" type="submit">ОТПРАВИТЬ</button>
 
             </form>
+        </section>
+
+        <section class="backgroundApplication">
+            <div class="titleSendApplication">
+                Оставьте заявку на техническое обслуживание
+            </div>
+            <div id="successApplication">
+                <img src="" alt="circleLogo" id="circleLogo">
+                <div id="successText">
+                    <div id="thank">Спасибо!
+                    </div>
+                    <div id="thankText">Ваша заявка успешно отправлена и находится в обработке.
+                    </div>
+                    <div id="refresh"><u>Обновить форму</u>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
@@ -156,5 +197,13 @@
     <footer></footer>
 
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+<script>
+    var element = document.getElementById('phone');
+    var maskOptions = {
+        mask: '+{7} (000) 000-00-00'
+    };
+    var mask = IMask(element, maskOptions);
+</script>
 </body>
 </html>
