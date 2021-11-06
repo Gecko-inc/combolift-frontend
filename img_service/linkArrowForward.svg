@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="14px" viewBox="0 0 23 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>E28A6056-7C70-4956-BA01-325DF9C66EDA</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Desktop-1920px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Service-Form-Filled" transform="translate(-1550.000000, -3556.000000)">
+            <g id="Group-13" transform="translate(347.000000, 3555.000000)">
+                <g id="back" transform="translate(955.753076, 0.000000)" filter="url(#filter-1)">
+                    <g transform="translate(258.623462, 8.000000) scale(-1, 1) translate(-258.623462, -8.000000) translate(248.246924, 2.407391)">
+                        <line x1="1.77353088" y1="5.61306359" x2="20.7530763" y2="5.59260904" id="Line-2" stroke="#FFFFFF" stroke-width="2"></line>
+                        <polyline id="Path-48" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" points="5.59260904 0 1.8189894e-12 5.59260904 5.59260904 11.1852181"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
