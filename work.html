@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Сбрасываем стандартные стили -->
     <link rel="stylesheet" href="./style/normalize.css">
-    <script src="js/work.js"></script>
+    <script src="js/validationForm1.js"></script>
+    <script src="js/validationForm2.js"></script>
     <!-- Анимация -->
     <link rel="stylesheet" href="./style/aos.css">
     <!-- Подключаем стили -->
     <link rel="stylesheet" href="./style/pages/page-work/index.css">
+    <link rel="stylesheet" href="./style/pages/page-work/form2.css">
+    <link rel="stylesheet" href="./style/pages/page-work/contacts.css">
+    <link rel="stylesheet" href="./style/pages/page-work/footer.css">
     <title>Комболифт</title>
 </head>
 <body>
@@ -18,8 +22,8 @@
 <!--MENU-->
 
     <header id="head">
-        <a href="" id="link_logo">
-            <div id="logo">
+        <a href="" class="link_logo">
+            <div class="logo">
                 <img src="img_service/logo.svg" alt="logo">
             </div>
         </a>
@@ -83,7 +87,7 @@
     </div>
 
 
-<!--ОСТАВИТЬ ЗАЯВКУ-->
+<!--ОСТАВИТЬ ЗАЯВКУ НА ОБСЛУЖИВАНИЕ (ФОРМА 1)+++++++++++++++++++++++++++++++++++-->
         <section class="backgroundApplication">
             <div class="titleSendApplication">
                 Оставьте заявку на техническое обслуживание
@@ -117,7 +121,7 @@
                 <div id="explanation">
                     <div id="requiredFields">* — поля, обязательные для заполнения
                     </div>
-                    <div id="agree">Нажимая кнопку "Отправить", Вы принимаете условия Политики конфиденциальности
+                    <div id="agree">Нажимая кнопку "Отправить", Вы принимаете условия <a  class="policy" href="">Политики конфиденциальности</a>
                     </div>
                 </div>
 
@@ -131,7 +135,7 @@
                 Оставьте заявку на техническое обслуживание
             </div>
             <div id="successApplication">
-                <img src="" alt="circleLogo" id="circleLogo">
+                <img src="" alt="circleLogo" class="circleLogo">
                 <div id="successText">
                     <div id="thank">Спасибо!
                     </div>
@@ -306,36 +310,158 @@
         </section>
 
     <div class="content">
-        <div id="questions">
-            <div id="questionsTitle">
-                Часто задаваемые вопросы
-            </div>
-            <div id="questionList">
+        <div id="questionsTitle">
+            Часто задаваемые вопросы
+        </div>
 
+        <div class="questionWrapper">
+            <div class="accordion">
 
-                <div class="oneQuestion">
-                    <img src="" class="questionLogo" alt="qLogo">
-                    <div class="questionText">
-                        Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов? Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов?
+                <div class="accordion-item">
+                    <div class="accordion-item_trigger">
+                        <img src="img_service/Experience.svg" class="accordionLogo" alt="qLogo">
+                        <div class="accordionText">
+                            Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов? Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов?
+                        </div>
+                        <div class="open">
+                            <img src="img_service/plus.svg" alt="plus_icon" class="plusIcon">
+                        </div>
+                        <div class="close">
+                            <img src="img_service/minus_icon.svg" alt="minus_icon" class="minusIcon">
+                        </div>
                     </div>
-                    <div class="open">
-                        +
+
+                    <div class="accordion-item_content">
+                        <div class="accordionText">
+                            contenttttttttttttttttttttttttttttttttttt
+                        </div>
                     </div>
                 </div>
 
-                <div class="oneQuestion">
-                    <img src="" class="questionLogo" alt="qLogo">
-                    <div class="questionText">
-                        Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов? Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов?
+                <div class="accordion-item">
+                    <div class="accordion-item_trigger">
+                        <img src="img_service/Experience.svg" class="accordionLogo" alt="qLogo">
+                        <div class="accordionText">
+                            Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов?
+                        </div>
+                        <div class="open">
+                            <img src="img_service/plus.svg" alt="plus_icon" class="plusIcon">
+                        </div>
+                        <div class="close">
+                            <img src="img_service/minus_icon.svg" alt="minus_icon" class="minusIcon">
+                        </div>
                     </div>
-                    <div class="open">
-                        +
+
+                    <div class="accordion-item_content">
+                        <div class="accordionText">
+                            Конечно, Вы абсолютно правы!
+                        </div>
                     </div>
                 </div>
 
 
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++ дополнительные вопросы  НЧАЛО+++++++++++++++++++++++++++++++++-->
+                <div class="accordion-item">
+                    <div class="accordion-item_trigger">
+                        <img src="img_service/Experience.svg" class="accordionLogo" alt="qLogo">
+                        <div class="accordionText">
+                            Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов? Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов?
+                        </div>
+                        <div class="open">
+                            <img src="img_service/plus.svg" alt="plus_icon" class="plusIcon">
+                        </div>
+                        <div class="close">
+                            <img src="img_service/minus_icon.svg" alt="minus_icon" class="minusIcon">
+                        </div>
+                    </div>
+
+                    <div class="accordion-item_content">
+                        <div class="accordionText">
+                            contenttttttttttttttttttttttttttttttttttt
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-item_trigger">
+                        <img src="img_service/Experience.svg" class="accordionLogo" alt="qLogo">
+                        <div class="accordionText">
+                            Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов?
+                        </div>
+                        <div class="open">
+                            <img src="img_service/plus.svg" alt="plus_icon" class="plusIcon">
+                        </div>
+                        <div class="close">
+                            <img src="img_service/minus_icon.svg" alt="minus_icon" class="minusIcon">
+                        </div>
+                    </div>
+
+                    <div class="accordion-item_content">
+                        <div class="accordionText">
+                            Конечно, Вы абсолютно правы!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item_trigger">
+                        <img src="img_service/Experience.svg" class="accordionLogo" alt="qLogo">
+                        <div class="accordionText">
+                            Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов?
+                        </div>
+                        <div class="open">
+                            <img src="img_service/plus.svg" alt="plus_icon" class="plusIcon">
+                        </div>
+                        <div class="close">
+                            <img src="img_service/minus_icon.svg" alt="minus_icon" class="minusIcon">
+                        </div>
+                    </div>
+
+                    <div class="accordion-item_content">
+                        <div class="accordionText">
+                            Конечно, Вы абсолютно правы!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-item_trigger">
+                        <img src="img_service/Experience.svg" class="accordionLogo" alt="qLogo">
+                        <div class="accordionText">
+                            Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов? Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов?
+                        </div>
+                        <div class="open">
+                            <img src="img_service/plus.svg" alt="plus_icon" class="plusIcon">
+                        </div>
+                        <div class="close">
+                            <img src="img_service/minus_icon.svg" alt="minus_icon" class="minusIcon">
+                        </div>
+                    </div>
+
+                    <div class="accordion-item_content">
+                        <div class="accordionText">
+                            contenttttttttttttttttttttttttttttttttttt
+                        </div>
+                    </div>
+                </div>
 
             </div>
+<!--++++++++++++++++++++++++++++++++++++++ дополнительные вопросы  КОНЕЦ+++++++++++++++++++++++++++++++++-->
+
+
+
+            <div id="whiteBack"></div>
+
+
+            <script>
+                document.querySelectorAll('.accordion-item_trigger').forEach((item)=>
+                    item.addEventListener('click',() => {
+                        const parent = item.parentNode;
+                        parent.classList.toggle('accordion-item_active');
+                        parent.classList.toggle('_active');
+
+                    })
+                )
+            </script>
 
         </div>
     </div>
@@ -343,17 +469,224 @@
 
 
 
+    <!--+++++++++++++++ОСТАВИТЬ ЗАЯВКУ (ФОРМА 2)+++++++++++++++++++++++++++++++++++-->
 
-    <footer></footer>
+    <section class="backgroundApplication_2">
+        <div class="titleSendApplication_2">
+            Оставьте заявку
+        </div>
+        <form id="form_2" action="#" enctype="multipart/form-data" method="post">
+
+            <input type="text" name="name_2" id="name_2" placeholder="Ваше имя *" class="form_name_2 _req_2">
+            <label for="name"></label>
+
+            <input type="tel" name="phone_2" id="phone_2" placeholder="Ваш телефон *" class="form_phone_2 _req_2" pattern=" \+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
+
+            <input type="email" name="email_2" id="email_2" placeholder="Ваш e-mail" class="form_email_2 _req_2 _email">
+
+            <textarea name="text_2" cols="1" rows="1" id="comment_2" placeholder="Комментарий" class="form_comment_2 _req_2"></textarea>
+
+            <div id="container_form_2">
+                <input type="file" name="file_2" id="f_2" class="hide_2" multiple accept=".jpg, .jpeg, .png, .pdf, .doc, .xls">
+                <label  for = "f_2" id="label_form_2"><img src="img_service/attach2.svg" alt="attach"><div>ПРИКРЕПИТЬ ФАЙЛ</div></label >
+                <div id="formats_2">JPG, PNG, PDF, DOC, XLS не более 5 Мб</div>
+            </div>
+
+            <div id="recapture_2">
+                recapture
+            </div>
+
+            <div id="explanation_2">
+                <div id="requiredFields_2">* — поля, обязательные для заполнения
+                </div>
+                <div id="agree_2">Нажимая кнопку "Отправить", Вы принимаете условия <a  class="policy_2" href="">Политики конфиденциальности</a>
+                </div>
+            </div>
+
+            <button id="submitApplication_2" class="form_button" type="submit">ОТПРАВИТЬ</button>
+
+        </form>
+
+
+    </section>
+
+    <section class="backgroundApplication_2">
+        <div class="titleSendApplication_2">
+            Оставьте заявку на техническое обслуживание
+        </div>
+        <div id="successApplication_2">
+            <img src="" alt="circleLogo" class="circleLogo">
+            <div id="successText_2">
+                <div id="thank_2">Спасибо!
+                </div>
+                <div id="thankText_2">Ваша заявка успешно отправлена и находится в обработке.
+                </div>
+                <div id="refresh_2"><u>Обновить форму</u>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!--++++++++++++++++++++++++КОНТАКТЫ++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+    <section id="contactPage">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7859.005297301557!2d37.72844514212735!3d55.777471839758206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5354077475b61%3A0xfcb34d7848cda1b4!2zMS3QuSDQmtC40YDQv9C40YfQvdGL0Lkg0L_QtdGALiwgMiwg0JzQvtGB0LrQstCwLCAxMDUxODc!5e0!3m2!1sru!2sru!4v1636247109253!5m2!1sru!2sru"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="contentPages">
+            <div id="contactBlock">
+                <div id="contactBlockTitle">
+                    Контакты
+                </div>
+                <div id="allContacts">
+                    <div class="oneContact1">
+                        <img class="contactPhoto" src="img_service/contactIcon1.svg" alt="contIcon">
+                        <div class="contactTitle">
+                            ООО «КомбоЛифт Сервис»
+                        </div>
+                        <div class="contactDescription">
+                        </div>
+                    </div>
+
+                    <div class="oneContact2">
+                        <img class="contactPhoto" src="img_service/contactIcon2.svg" alt="contIcon">
+                        <div class="contactTitle">
+                            8 (495) 175-70-83
+                        </div>
+                        <div class="contactDescription">
+                        </div>
+                    </div>
+
+                    <div class="oneContact3">
+                        <img class="contactPhoto" src="img_service/contactIcon3.svg" alt="contIcon">
+                        <div class="contactTitle">
+                            info@service-cl.ru
+                        </div>
+                        <div class="contactDescription">
+                        </div>
+                    </div>
+
+                    <div class="oneContact4">
+                        <img class="contactPhoto" src="img_service/contactIcon4.svg" alt="contIcon">
+                        <div class="contactTitle">
+                            Юр. адрес
+                        </div>
+                        <div class="contactDescription">
+                            117105, г. Москва, Варшавское ш., д1,  стр.1-2, этаж 3, комн.50
+                        </div>
+                    </div>
+
+                    <div class="oneContact5">
+                        <img class="contactPhoto" src="img_service/contactIcon4.svg" alt="contIcon">
+                        <div class="contactTitle">
+                            Факт. адрес
+                        </div>
+                        <div class="contactDescription">
+                            105118, г. Москва, 1-й Кирпичный переулок, д.2, 2-й этаж, пом. 3,5
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+<!--        <div class="footBackground">-->
+            <div class="footerGrid">
+                <div class="footElement1">
+
+                    <a href="" class="link_logo">
+                        <div class="logo">
+                            <img src="img_service/logo.svg" alt="logo">
+                        </div>
+                    </a>
+                    <div id="copyright">
+                        Текст копирайта текст копирайта Текст копирайта © ООО Лифт, 2017-2021 г.
+                    </div>
+                </div>
+
+                <div class="footElement2">
+                    <a href="" class="footLinks">Услуги</a>
+                    <a href="" class="footLinks">Оборудование</a>
+                    <a href="" class="footLinks">Преимущества</a>
+                </div>
+
+                <div class="footElement3">
+                    <a href="" class="footLinks">О нас</a>
+                    <a href="" class="footLinks">Наши клиенты</a>
+                    <a href="" class="footLinks">FAQ</a>
+                </div>
+
+                <div class="footElement4">
+                    <div id="footerPhone">8 (495) 175-70-83</div>
+                    <div id="footerEmail">info@service-cl.ru</div>
+                    <div class="footIcons">
+                        <a href="" class="footIcon">
+                            <img src="img_service/fb.svg">
+                        </a>
+                        <a href="" class="footIcon">
+                            <img src="img_service/fb.svg">
+                        </a>
+                        <a href="" class="footIcon">
+                            <img src="img_service/fb.svg">
+                        </a>
+                        <a href="" class="footIcon">
+                            <img src="img_service/fb.svg">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="footElement5">
+                    <div>Пассажирские лифты</div>
+                    <div>Грузопассажирские лифты</div>
+                    <div>Коттеджные лифты</div>
+                    <div>Технический аудит </div>
+                    <div>Технический аудит </div>
+                    <div>Скоростные лифты</div>
+                    <div>Лифтовые инновации</div>
+                </div>
+                <div class="footElement6">
+                    <div>
+                        Поиск по сайту
+                    </div>
+                </div>
+
+            </div>
+
+<!--        </div>-->
+    </footer>
 
     <script src="./js/index.js"></script>
     <script src="https://unpkg.com/imask"></script>
+
 <script>
     var element = document.getElementById('phone');
+    var element2 = document.getElementById('phone_2');
     var maskOptions = {
         mask: '+{7} (000) 000-00-00'
     };
     var mask = IMask(element, maskOptions);
+    var mask2 = IMask(element2, maskOptions);
 </script>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

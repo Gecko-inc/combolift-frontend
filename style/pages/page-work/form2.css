@@ -1,0 +1,270 @@
+/*<!--+++++++++++++++ОСТАВИТЬ ЗАЯВКУ (ФОРМА 2)+++++++++++++++++++++++++++++++++++-->*/
+
+.backgroundApplication_2 {
+    background-color: #F7F8F9;
+
+    width: 100%;
+    padding: 0 12% 0 12%;
+    height: 901px;
+    border: 1px solid transparent;
+
+
+    background-image: linear-gradient(rgba(37,62,148,0.34), rgba(213,61,15,0.3)), url(../../../img_service/background2.jpg);
+    background-size: 30% 101%;
+    background-repeat: no-repeat;
+    background-position: right;
+
+
+
+}
+
+.titleSendApplication_2 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    max-height: 40px;
+    line-height: 40px;
+    color: #222222;
+    margin: 240px 0 52px 0;
+    max-width: 70%;
+}
+
+#form_2{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 60px);
+    gap: 24px;
+
+}
+
+
+
+.form_name_2 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.form_phone_2 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.form_email_2 {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.form_comment_2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+
+
+#container_form_2 {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    padding: 0;
+
+}
+input, textarea {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+#recapture_2{
+    background-color: orange;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#explanation_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 8;
+
+}
+
+#requiredFields_2, #agree_2 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    color: #222222;
+    text-decoration: none;
+}
+
+.policy_2 {
+    text-decoration: none;
+    color: #D53D0F;
+}
+
+#submitApplication_2 {
+    text-transform: uppercase;
+    background-color: #D53D0F;
+    border-radius: 8px;
+    height: 100%;
+    width: 180px;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 8;
+    grid-column-end: 9;
+    border: 0;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#submitApplication_2:hover {
+    background-color: #f45627;
+}
+
+
+
+
+.hide_2 {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+
+#container_form_2 {
+    display: flex;
+    height: 24px;
+    justify-content: space-between;
+    align-items: center;
+    width: 447px;
+}
+
+#label_form_2 {
+    text-transform: uppercase;
+    display: flex;
+    height: 24px;
+    justify-content: space-between;
+    align-items: center;
+    width: 188px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #D53D0F;
+    cursor: pointer;
+
+}
+
+#formats_2 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    width: 251px;
+    height: 24px;
+    line-height: 24px;
+    color: #828282;
+}
+
+
+/*валидация полей НАЧАЛО*/
+
+/*-----------------------СТИЛИ ДЛЯ НЕЗАПОЛНЕННЫХ ПОЛЕЙ ПОЛЕЙ*/
+
+.form_name_2._error_2, .form_phone_2._error_2, .form_email_2._error_2, .form_comment_2._error_2{
+    background-color: #FFEBE8;
+}
+
+/*Chrome 57 и Firefox 51*/
+.form_name_2._red_2::placeholder, .form_phone_2._red_2::placeholder, .form_email_2._red_2::placeholder, .form_comment_2._red_2::placeholder{
+    color: #921202;
+}
+/*!*Firefox новые версии*!*/
+/*.form_name._red::-moz-placeholder, .form_phone._red::-moz-placeholder, .form_email._red::-moz-placeholder, .form_comment._red::-moz-placeholder{*/
+/*    color: #921202;*/
+/*}*/
+/*!*Internet Explorer*!*/
+/*.form_name._red:-ms-input-placeholder, .form_phone._red:-ms-input-placeholder, .form_email._red:-ms-input-placeholder, .form_comment._red:-ms-input-placeholder{*/
+/*    color: #921202;*/
+/*}*/
+/*!*Microsoft Edge*!*/
+/*.form_name._red::-ms-input-placeholder, .form_phone._red::-ms-input-placeholder, .form_email._red::-ms-input-placeholder, .form_comment._red::-ms-input-placeholder{*/
+/*    color: #921202;*/
+/*}*/
+/*!*Chrome, Opera и Safari*!*/
+/*.form_name._red::-webkit-input-placeholder, .form_phone._red::-webkit-input-placeholder, .form_email._red::-webkit-input-placeholder, .form_comment._red::-webkit-input-placeholder{*/
+/*    color: #921202;*/
+/*}*/
+/*!*Firefox с 4 по 19 версии*!*/
+/*.form_name._red-moz-placeholder, .form_phone._red-moz-placeholder, .form_email._red-moz-placeholder, .form_comment._red-moz-placeholder{*/
+/*    color: #921202;*/
+/*}*/
+
+/*валидация полей КОНЕЦ*/
+
+
+
+
+/*============================УДАЧНАЯ ОТПРАВКА ФОРМЫ 2*/
+
+#successApplication_2 {
+    display: flex;
+    width: 607px;
+    column-gap: 24px;
+    margin-top: 137px;
+}
+
+
+#successText_2 {
+    display: flex;
+    flex-direction: column;
+    height: 124px;
+    width: 519px;
+    justify-content: space-between;
+    color: #222222;
+}
+
+#thank_2 {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 700;
+    height: 48px;
+    line-height: 48px;
+
+}
+
+#thankText_2 {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+    height: 26px;
+    line-height: 26px;
+}
+
+#refresh_2 {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+    height: 26px;
+    line-height: 26px;
+    cursor: pointer;
+}

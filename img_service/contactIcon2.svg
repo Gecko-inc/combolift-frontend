@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="49px" viewBox="0 0 38 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>4468054D-6974-4779-820A-9A4721D86F02</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0.200000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Desktop-1920px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Service-Form-Filled" transform="translate(-764.000000, -6835.000000)">
+            <g id="Desktop/Contacts" transform="translate(0.000000, 6587.000000)">
+                <g id="streamline-icon-phone-mobile-phone@48x48" transform="translate(764.000000, 250.000000)" filter="url(#filter-1)">
+                    <g transform="translate(2.000000, 0.000000)">
+                        <rect id="Rectangle" stroke="#000000" stroke-width="3.42857143" x="0" y="0" width="34.2857143" height="44.5714286" rx="1"></rect>
+                        <line x1="14.5714286" y1="36" x2="19.7142857" y2="36" id="Path" stroke="#000000" stroke-width="3.42857143"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

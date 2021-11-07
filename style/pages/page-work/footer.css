@@ -1,0 +1,87 @@
+.footBackground {
+    /*background-color: #F7F8F9;*/
+    /*min-height: 325px;*/
+    /*padding: 0 12% 0 12%;*/
+}
+
+
+.footerGrid {
+    background-color: #F7F8F9;
+    min-height: 325px;
+    padding: 0 12% 0 12%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+}
+
+.footElement1, .footElement2, .footElement3, .footElement4, .footElement5, .footElement6{
+    background-color: tan;
+}
+
+
+.footElement1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 3;
+}
+.footElement2 {
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-row-end: 1;
+    grid-column-end: 5;
+}
+.footElement3 {
+    grid-row-start: 1;
+    grid-column-start: 7;
+    grid-row-end: 1;
+    grid-column-end: 7;
+}
+.footElement4 {
+    grid-row-start: 1;
+    grid-column-start: 10;
+    grid-row-end: 1;
+    grid-column-end: 13
+}
+.footElement5 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 8;
+}
+.footElement6 {
+    grid-row-start: 2;
+    grid-column-start: 10;
+    grid-row-end: 2;
+    grid-column-end: 13;
+}
+
+#copyright{
+    font: 300 13px 'Roboto';
+    line-height: 20px;
+    height: 20px;
+    color: #222222;
+}
+
+.footLinks {
+    text-decoration: none;
+    font: 300 14px 'Roboto';
+    line-height: 16px;
+    height: 16px;
+    color: #222222;
+}
+
+#footerPhone {
+    font: 700 32px 'Montserrat';
+    line-height: 32px;
+    height: 32px;
+    color: #222222;
+}
+
+#footerEmail {
+    font: 600 18px 'Montserrat';
+    line-height: 32px;
+    height: 32px;
+    color: #222222;
+}

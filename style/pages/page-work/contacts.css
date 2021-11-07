@@ -1,0 +1,118 @@
+#contactPage {
+    background-color: #53585E;
+    height: 1098px;
+    padding: 0;
+    position: relative;
+
+}
+
+#contentPages{
+    margin: 0 12% 0 12%;
+    position: relative;
+
+}
+
+#contactBlock {
+    padding-top: 164px;
+}
+#contactBlockTitle {
+    text-transform: uppercase;
+    position: absolute;
+    top: 88px;
+    right: 0;
+    font-size: 80px;
+    color: #646970;
+    line-height: 97px;
+    min-height: 97px;
+    font-weight: 800;
+    font-family: 'Montserrat';
+
+}
+
+#allContacts{
+    background-color: #646970;
+    min-height: 735px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 64px;
+
+    align-items: center;
+    justify-items: flex-start;
+    padding: 5%;
+}
+.oneContact1, .oneContact2, .oneContact3, .oneContact4, .oneContact5, .map {
+    width: 100%;
+    height: 100%;
+
+}
+
+.oneContact1, .oneContact2, .oneContact3, .oneContact4, .oneContact5 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.oneContact1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 4;
+}
+
+.oneContact2 {
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-row-end: 1;
+    grid-column-end: 8;
+}
+
+.oneContact3 {
+    grid-row-start: 1;
+    grid-column-start: 9;
+    grid-row-end: 1;
+    grid-column-end: 12;
+}
+
+.oneContact4 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 4;
+}
+
+.oneContact5 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 4;
+}
+
+.map {
+    Width: 65%;
+    Height: 579px;
+    position: absolute;
+    top: 407px;
+    right: 0;
+    z-index: 1;
+}
+
+.contactTitle{
+    font: 700 22px 'Montserrat';
+    height: 32px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.contactDescription {
+    font: 400 16px 'Roboto';
+    height: 52px;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+.contactPhoto {
+    width: 47px;
+    height: 47px;
+}
