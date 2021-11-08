@@ -10,12 +10,18 @@ body {
 }
 
 /*<!--MENU-->*/
-
+section {
+    padding-top: unset;
+    padding-bottom: unset;
+}
 a {
     text-decoration: none;
     cursor: pointer;
 }
 
+.burger-menu{
+    display: none;
+}
 #head{
     position: sticky;
     top: 0;

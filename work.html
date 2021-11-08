@@ -20,6 +20,8 @@
 </head>
 <body>
 
+
+
 <!--MENU-->
 
     <header id="head">
@@ -39,13 +41,57 @@
                 <li><a class="link_menu" href="">КОНТАКТЫ</a></li>
             </ul>
         </div>
+
+
+        <div class="burger-menu">
+            <div id="burger-menu_button" onclick="openMenu()">
+                <span id="burger-menu_line1"></span>
+                <span id="burger-menu_line2"></span>
+                <span id="burger-menu_line3"></span>
+            </div>
+
+            <nav id="burger-menu_nav">
+                <a href="#" class="burger-menu_link" onclick="closeMenu()">Услуги</a>
+                <a href="#equipment" class="burger-menu_link" onclick="closeMenu()">Оборудование</a>
+                <a href="#advantages" class="burger-menu_link" onclick="closeMenu()">Преимущества</a>
+                <a href="" class="burger-menu_link" onclick="closeMenu()">О нас</a>
+                <a href="" class="burger-menu_link" onclick="closeMenu()">Наши клиенты</a>
+                <a href="#questions" class="burger-menu_link" onclick="closeMenu()">FQA</a>
+                <a href="#contactPage" class="burger-menu_link" onclick="closeMenu()">Контакты</a>
+            </nav>
+        </div>
+
     </header>
 
+<!--open menu  ++++++++++++++++++++++++   close menu-->
+
+<script>
+    function openMenu() {
+        document.getElementById("burger-menu_button").classList.toggle('active');
+        document.getElementById("burger-menu_line1").classList.toggle('active');
+        document.getElementById("burger-menu_line2").classList.toggle('active');
+        document.getElementById("burger-menu_line3").classList.toggle('active');
+        document.getElementById("burger-menu_nav").classList.toggle('active');
+        document.querySelector("body").classList.toggle('active');
+
+
+    }
+</script>
+<script>
+    function closeMenu() {
+        document.getElementById("burger-menu_button").classList.remove('active');
+        document.getElementById("burger-menu_line1").classList.remove('active');
+        document.getElementById("burger-menu_line2").classList.remove('active');
+        document.getElementById("burger-menu_line3").classList.remove('active');
+        document.getElementById("burger-menu_nav").classList.remove('active');
+        document.querySelector("body").classList.toggle('active');
+    }
+</script>
 
 
 <!--БОЛЬШОЙ ТЕКСТ НА СТРАНИЦЕ УСЛУГ-->
 
-    <div class="content">
+    <section id="MainText" class="content">
 
         <a href="" id="link_home_arrow">
             <div id="home_arrow">
@@ -85,12 +131,12 @@
                 <img class="item_photo" src="img_service/montag.jpg" alt="item_photo">
             </div>
         </section>
-    </div>
+    </section>
 
 
 <!--ОСТАВИТЬ ЗАЯВКУ НА ОБСЛУЖИВАНИЕ (ФОРМА 1)+++++++++++++++++++++++++++++++++++-->
 
-        <section class="backgroundApplication">
+        <section id="application1" class="backgroundApplication">
             <div class="titleSendApplication">
                 Оставьте заявку на техническое обслуживание
             </div>
@@ -131,7 +177,7 @@
             </form>
         </section>
 
-        <section class="backgroundApplication">
+        <section id="successApplication1" class="backgroundApplication">
             <div class="titleSendApplication">
                 Оставьте заявку на техническое обслуживание
             </div>
@@ -153,7 +199,7 @@
 
 <!--ОБОРУДОВАНИЕ-->
     <div class="content">
-        <div id="equipment">
+        <section id="equipment">
             <div id="rrr">
                 ОБОРУДОВАНИЕ
             </div>
@@ -233,12 +279,12 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </section>
     </div>
 
 
 <!--=======================ПРЕИМУЩЕСТВА-->
-        <section class="backgroundAdvantages">
+        <section id="advantages" class="backgroundAdvantages">
             <div id="advantagesGrid">
                 <div class="advantage">
                     <img src="img_service/Experience.svg">
@@ -310,7 +356,9 @@
             </div>
         </section>
 
-    <div class="content">
+<!--++++++++++++++++++++++++++++Воппросы +++++++++++++++++++++-->
+
+    <section id="questions" class="content">
         <div id="questionsTitle">
             Часто задаваемые вопросы
         </div>
@@ -465,14 +513,14 @@
             </script>
 
         </div>
-    </div>
+    </section>
 
 
 
 
     <!--+++++++++++++++ОСТАВИТЬ ЗАЯВКУ (ФОРМА 2)+++++++++++++++++++++++++++++++++++-->
 
-    <section class="backgroundApplication_2">
+    <section id="application2" class="backgroundApplication_2">
         <div class="titleSendApplication_2">
             Оставьте заявку
         </div>
@@ -511,7 +559,7 @@
 
     </section>
 
-    <section class="backgroundApplication_2">
+    <section id="successApplication2" class="backgroundApplication_2">
         <div class="titleSendApplication_2">
             Оставьте заявку
         </div>
