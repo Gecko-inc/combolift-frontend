@@ -1,0 +1,750 @@
+@media screen and (max-width: 991px) {
+
+/*<!--MENU-->*/
+    #head {
+        padding: 0 4% 0 4%;
+    }
+    .content {
+        margin: 0 4% 0 4%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+/*===========================БОЛЬШОЙ ТЕКСТ НА СТРАНИЦЕ УСЛУГ*/
+    #home_arrow{
+        margin: 54px 0 44px 0;
+    }
+    .title {
+        font-size: 36px;
+    }
+
+    #information {
+        margin: 54px 0 66px 0;
+    }
+
+    .mainText1, .mainText2 {
+        row-gap: 30px;
+    }
+
+/*=====================ОСТАВИТЬ ЗАЯВКУ ФОРМА1 И ФОРМА2*/
+
+    .backgroundApplication, .backgroundApplication_2 {
+        padding: 40px 4% 40px 4%;
+        height: max-content;
+    }
+
+    .backgroundApplication_2 {
+        background: #F7F8F9;
+    }
+
+    .titleSendApplication, .titleSendApplication_2 {
+        font-size: 28px;
+        margin: 0 0 40px 0;
+    }
+
+    #form, #form_2{
+        grid-template-rows: repeat(7, 55px);
+        gap: 20px;
+    }
+
+    .form_name, .form_phone, .form_email, .form_name_2, .form_phone_2, .form_email_2 {
+        grid-column-end: 8;
+    }
+
+    #comment, #comment_2 {
+        grid-row-end: 5;
+    }
+
+    #container_format, #container_format_2 {
+        grid-row-start: 5;
+        grid-row-end: 5;
+        flex-direction: column;
+        width: auto;
+        justify-content: space-around;
+        align-items: flex-start;
+       height: auto;
+    }
+
+    #recapture, #recapture_2 {
+        grid-column-end: 6;
+    }
+
+    #explanation, #explanation_2 {
+        grid-column-start: 6;
+        grid-column-end: 13;
+    }
+
+    #recapture, #explanation, #recapture_2, #explanation_2 {
+        grid-row-end: 6;
+        grid-row-start: 6;
+    }
+
+    #comment, #container_format, #comment_2, #container_format_2 {
+        grid-column-start: 8;
+    }
+
+    #submitApplication,  #submitApplication_2{
+        grid-row-start: 7;
+        grid-row-end: 7;
+    }
+
+    #requiredFields, #agree, #requiredFields_2, #agree_2 {
+
+        height: auto;
+        line-height: normal;
+
+    }
+
+    #comment_2, #container_format_2, #submitApplication_2 {
+        grid-column-end: 13;
+    }
+    #submitApplication_2 {
+        grid-column-start: 11;
+    }
+
+
+/*=====================УСПЕШНАЯ ОТПРАВКА ЗАЯВКИ ФОРМА1 И ФОРМА2*/
+    #successApplication, #successApplication_2 {
+        margin: 137px 0;
+        width: 100%;
+    }
+
+    #thankText, #thankText_2 {
+        height: max-content;
+    }
+
+
+/*=============================ОБОРУДОВАНИЕ*/
+
+    #rrr {
+        font-size: 55px;
+    }
+    #equip_title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    #goodsGrid {
+        grid-template-columns: repeat(auto-fill, minmax(auto, 270px));
+        row-gap: 54px;
+        margin-bottom: 70px;
+    }
+
+    .goodTitle {
+        font-size: 20px;
+    }
+
+    #scrollGoods {
+        margin-bottom: 70px;
+    }
+
+
+/*=========================ПРЕИМУЩЕСТВА*/
+    .backgroundAdvantages {
+        padding: 0 4% 0 4%;
+        margin-bottom: 80px;
+    }
+
+    .advantageTitle {
+        font-size: 18px;
+        line-height: inherit;
+    }
+
+    .advantageDescription{
+        width: auto;
+    }
+
+    #advantagesGrid {
+        grid-template-columns: repeat(auto-fill, minmax(auto, 260px));
+        row-gap: 74px;
+        column-gap: 20px;
+        padding: 85px 0;
+    }
+
+    .advantage > img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+
+/*++++++++++++++++++++++++ВОПРОСЫ*/
+    .questionWrapper {
+        margin-bottom: 80px;
+    }
+    #questionsTitle {
+        font-size: 32px;
+        margin-bottom: 62px;
+    }
+
+    .accordion-item_trigger {
+        padding: 15px;
+    }
+
+    .accordionText {
+        font-size: 16px;
+    }
+    .accordion-item_content {
+        padding: 15px 15px 15px 15%;
+    }
+
+
+/*+++++++++++++++++++++++++КОНТАКТЫ+++++++++++++++++*/
+
+    #contentPages {
+        margin: 0 4% 0 4%;
+    }
+
+    #contactBlock {
+        padding-top: 110px;
+    }
+    #contactBlockTitle {
+        font-size: 55px;
+        top: 44px;
+    }
+
+    .contactTitle {
+        font-size: 20px;
+        line-height: 28px;
+        height: auto;
+    }
+    .contactDescription{
+        height: auto;
+    }
+
+    #allContacts {
+        row-gap: 34px;
+        min-height: max-content;
+    }
+    .map {
+        top: 330px;
+    }
+
+
+/*++++++++++++++++++++FOOTER+++++++++++++++++++++++*/
+    .footerGrid {
+        padding: 58px 4% 29px 4%;
+    }
+
+    #copyright{
+        min-width: 120px;
+        margin: 12% 0;
+        height: auto;
+    }
+
+    .footElement1 {
+        grid-column-end: 4;
+    }
+
+    .footElement2 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+    }
+    .footElement3 {
+        grid-column-start: 7;
+        grid-column-end: 7;
+    }
+    .footElement4 {
+        grid-column-start: 8;
+        min-width: max-content;
+    }
+
+    #footerPhone {
+        font-size: 20px;
+        line-height: 32px;
+        height: 32px;
+    }
+    .footIcon {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .footElement6 {
+        grid-column-start: 9;
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    /*===========================БОЛЬШОЙ ТЕКСТ НА СТРАНИЦЕ УСЛУГ*/
+
+    #home_arrow{
+        margin: 34px 0 34px 0;
+    }
+    .title {
+        font-size: 28px;
+        line-height: 32px;
+        min-height: auto;
+    }
+
+    #information {
+        margin: 34px 0 66px 0;
+        grid-template-columns:  1fr;
+        row-gap: 30px;
+    }
+
+    #photo1 {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 1;
+        grid-column-end: 1;
+    }
+
+    #item1 {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 1;
+    }
+
+    #photo2 {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-row-end: 4;
+        grid-column-end: 1;
+    }
+
+    #item2 {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-row-end: 3;
+        grid-column-end: 1;
+    }
+
+
+/*=====================ОСТАВИТЬ ЗАЯВКУ ФОРМА1 И ФОРМА2*/
+
+    .backgroundApplication, .backgroundApplication_2 {
+        padding: 60px 4% 60px 4%;
+        height: max-content;
+    }
+
+    .backgroundApplication_2 {
+        background: #F7F8F9;
+    }
+
+    .titleSendApplication, .titleSendApplication_2 {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+        line-height: 28px;
+    }
+
+    #form, #form_2{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fill, minmax(50px, auto));
+        gap: 20px;
+    }
+
+    .form_name, .form_name_2 {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 1;
+        grid-column-end: 1;
+    }
+
+    .form_phone, .form_phone_2 {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 1;
+    }
+
+    .form_email, .form_email_2 {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-row-end: 3;
+        grid-column-end: 1;
+    }
+
+    #comment, #comment_2 {
+        height: 100px;
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-row-end: 4;
+        grid-column-end: 1;
+    }
+
+    #container_format, #container_format_2 {
+        height: 60px;
+        grid-row-start: 5;
+        grid-column-start: 1;
+        grid-row-end: 5;
+        grid-column-end: 1;
+        flex-direction: column;
+        width: auto;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    #formats {
+        width: auto;
+        padding-left: 20px;
+    }
+
+    #label_form {
+        font-size: 14px;
+        width: auto;
+        gap: 10px;
+    }
+
+    #recapture, #recapture_2 {
+        grid-row-start: 6;
+        grid-column-start: 1;
+        grid-row-end: 6;
+        grid-column-end: 1;
+    }
+
+    #explanation, #explanation_2 {
+        grid-row-start: 7;
+        grid-column-start: 1;
+        grid-row-end: 7;
+        grid-column-end: 1;
+        gap: 10px;
+    }
+
+    #submitApplication,  #submitApplication_2{
+        grid-row-start: 8;
+        grid-column-start: 1;
+        grid-row-end: 8;
+        grid-column-end: 1;
+        justify-self: center;
+        height: 55px;
+        width: 160px;
+    }
+
+    .form_name, .form_phone, .form_email, .form_name_2, .form_phone_2, .form_email_2 {
+        height: 50px;
+    }
+
+
+    #requiredFields, #agree, #requiredFields_2, #agree_2 {
+        font-size: 12px;
+    }
+
+
+
+/*=====================УСПЕШНАЯ ОТПРАВКА ЗАЯВКИ ФОРМА1 И ФОРМА2*/
+    #successApplication, #successApplication_2 {
+        column-gap: 34px;
+        margin: 137px 0;
+        width: 100%;
+    }
+
+    #successText, #successText_2 {
+        height: 134px;
+    }
+
+    #thank, #thank_2 {
+        font-size: 18px;
+    }
+    #thankText, #thankText_2, #refresh, #refresh_2 {
+        font-size: 15px;
+        line-height: 20px;
+        height: max-content;
+    }
+
+
+    /*=============================ОБОРУДОВАНИЕ*/
+
+    #rrr {
+        font-size: 36px;
+    }
+
+    #equipment {
+        margin-top: 90px;
+    }
+    #equip_title {
+        text-transform: inherit;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 45px;
+    }
+
+    #goodsGrid {
+        grid-template-columns: repeat(auto-fill, minmax(auto, 270px));
+        row-gap: 34px;
+        margin-bottom: 70px;
+    }
+
+    .goodTitle {
+        font-size: 20px;
+        min-height: auto;
+    }
+
+    #scrollGoods {
+        margin-bottom: 70px;
+        gap: 100px;
+    }
+
+    #rightLink {
+        align-items: flex-end;
+        text-align: end;
+        flex-direction: column-reverse;
+    }
+
+    #leftLink {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+
+
+    /*=========================ПРЕИМУЩЕСТВА*/
+    .backgroundAdvantages {
+        margin-bottom: 55px;
+    }
+
+    .advantageTitle {
+        line-height: 26px;
+    }
+
+    #advantagesGrid {
+        grid-template-columns: repeat(auto-fill, minmax(auto, 260px));
+        row-gap: 34px;
+        column-gap: 20px;
+        padding: 65px 0;
+    }
+
+    .advantageText {
+        gap: 15px;
+    }
+
+
+
+    /*!*++++++++++++++++++++++++ВОПРОСЫ*!*/
+    .questionWrapper {
+        margin-bottom: 60px;
+    }
+    #questionsTitle {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    .accordion-item_trigger {
+        align-items: flex-start;
+        gap: 12px;
+        padding: 17px;
+    }
+
+    .accordionText {
+        font-size: 14px;
+    }
+    .accordion-item_active .accordion-item_content {
+        padding: 15px 15px 15px 15%;
+    }
+
+    .accordionLogo {
+        min-width: 25px;
+        min-height: 25px;
+    }
+
+    .open {
+        align-self: center;
+    }
+
+
+    /*!*+++++++++++++++++++++++++КОНТАКТЫ+++++++++++++++++*!*/
+    .map {
+        display: none;
+    }
+    .mapMobile {
+        display: block;
+        width: 100%;
+        height: 500px;
+    }
+
+    #contactPage {
+        height: max-content;
+    }
+    #contentPages {
+        margin: 0 4% 0 4%;
+    }
+
+    #contactBlock {
+        padding-top: 90px;
+    }
+    #contactBlockTitle {
+        font-size: 52px;
+        top: 25px;
+    }
+
+    #allContacts {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, minmax(50px, auto));
+        row-gap: 24px;
+    }
+
+    .oneContact1, .oneContact2, .oneContact3 {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 10% 90%;
+        gap: 20px;
+    }
+
+    .oneContact4, .oneContact5 {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: 10% 90%;
+        gap: 20px;
+        row-gap: 5px;
+    }
+
+    .contactPhoto {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 1;
+        grid-column-end: 1;
+    }
+    .contactTitle {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-row-end: 1;
+        grid-column-end: 2;
+    }
+    .contactDescription {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-row-end: 2;
+        grid-column-end: 2;
+    }
+
+
+    .oneContact1 {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 1;
+        grid-column-end: 1;
+    }
+
+    .oneContact2 {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 1;
+    }
+
+    .oneContact3 {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-row-end: 3;
+        grid-column-end: 1;
+    }
+
+    .oneContact4 {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-row-end: 4;
+        grid-column-end: 1;
+    }
+
+    .oneContact5 {
+        grid-row-start: 5;
+        grid-column-start: 1;
+        grid-row-end: 5;
+        grid-column-end: 1;
+    }
+
+    .contactTitle {
+        align-self: center;
+        font-size: 20px;
+        line-height: 28px;
+        height: auto;
+    }
+    .contactDescription{
+        height: auto;
+    }
+
+
+
+    /*!*++++++++++++++++++++FOOTER+++++++++++++++++++++++*!*/
+    .footerGrid {
+        display: grid;
+        padding: 55px 4% 35px 4%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, minmax(min-content, auto));
+        row-gap: 20px;
+    }
+
+    #copyright{
+        width: 300px;
+        margin: 5% 0;
+        height: auto;
+        text-align: center;
+    }
+
+    .footElement1 {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 1;
+        grid-column-end: 3;
+    }
+
+    .footElement2 {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 1;
+    }
+
+    .footElement3 {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-row-end: 2;
+        grid-column-end: 2;
+    }
+
+    .footElement4 {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-row-end: 4;
+        grid-column-end: 3;
+        justify-self: center;
+        align-items: center;
+    }
+    .footIcons {
+        justify-content: center;
+    }
+    #footerEmail {
+        text-decoration: underline;
+        font-size: 16px;
+    }
+    .footIcon {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .footElement5 {
+        height: auto;
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-row-end: 3;
+        grid-column-end: 3;
+    }
+    .footElement6 {
+        grid-row-start: 5;
+        grid-column-start: 1;
+        grid-row-end: 5;
+        grid-column-end: 3;
+    }
+
+    /*#footerPhone {*/
+    /*    font-size: 20px;*/
+    /*    line-height: 32px;*/
+    /*    height: 32px;*/
+    /*}*/
+    /*.footIcon {*/
+    /*    max-width: 30px;*/
+    /*    max-height: 30px;*/
+    /*}*/
+
+
+
+
+}

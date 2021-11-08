@@ -93,7 +93,7 @@
     Width: 65%;
     Height: 579px;
     position: absolute;
-    top: 407px;
+    top: 350px;
     right: 0;
     z-index: 1;
 }
@@ -115,4 +115,8 @@
 .contactPhoto {
     width: 47px;
     height: 47px;
+}
+
+.mapMobile {
+    display: none;
 }

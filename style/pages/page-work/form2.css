@@ -22,7 +22,7 @@
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 40px;
-    max-height: 40px;
+    max-height: 80px;
     line-height: 40px;
     color: #222222;
     margin: 240px 0 52px 0;
@@ -68,7 +68,7 @@
 }
 
 
-#container_form_2 {
+#container_format_2 {
     grid-row-start: 3;
     grid-row-end: 3;
     grid-column-start: 5;

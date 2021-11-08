@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./style/pages/page-work/form2.css">
     <link rel="stylesheet" href="./style/pages/page-work/contacts.css">
     <link rel="stylesheet" href="./style/pages/page-work/footer.css">
+    <link rel="stylesheet" href="./style/pages/page-work/adaptability.css">
     <title>Комболифт</title>
 </head>
 <body>
@@ -58,10 +59,10 @@
         </div>
 
         <section id="information">
-            <div id="item1">
+            <div id="photo1">
                 <img class="item_photo" src="img_service/1photo.jpg" alt="item_photo">
             </div>
-            <div id="item2">
+            <div id="item1" class="mainText1">
                <span>
                     Регулярное техническое обслуживание лифтового оборудования направлено на предупреждение износа основных агрегатов и своевременную замену расходных материалов. Специалистами нашей компании, в соответствии с установленным планом работ, выполняется - ежемесячный, ежеквартальный, полугодовой и годовой регламентный осмотр, профилактика, диагностика узлов и механизмов, очистка от пыли основных модулей, замена изношенных деталей.
                </span>
@@ -72,7 +73,7 @@
                     Выполнение данного перечня работ в полном объёме производится компанией «КОМБО ЛИФТ СЕРВИС», также нами разработана уникальная система контроля качества за исполнением. Выполнение данного перечня работ в полном объёме производится компанией «КОМБО ЛИФТ СЕРВИС», также нами разработана уникальная система контроля качества за исполнением.
                 </span>
             </div>
-            <div id="item3">
+            <div id="photo2" class="mainText2">
                 <span>
                     Регулярное техническое обслуживание лифтового оборудования направлено на предупреждение износа основных агрегатов и своевременную замену расходных материалов. Специалистами нашей компании, в соответствии с установленным планом работ, выполняется - ежемесячный, ежеквартальный, полугодовой и годовой регламентный осмотр, профилактика, диагностика узлов и механизмов, очистка от пыли основных модулей, замена изношенных деталей.
                </span>
@@ -80,7 +81,7 @@
                    Во время полного технического осмотра лифта, которое как правило выполняется ежегодно, проводится полная проверка того, соответствует ли оборудование подъёмника сведениям, указанным в паспорте лифта, работу подъёмника проверяют во всех режимах, изучается документация, отчётность технических проверок, которые проводились в течение года, соответствие лифта документации и т д.
                </span>
             </div>
-            <div id="item4">
+            <div id="item2">
                 <img class="item_photo" src="img_service/montag.jpg" alt="item_photo">
             </div>
         </section>
@@ -88,6 +89,7 @@
 
 
 <!--ОСТАВИТЬ ЗАЯВКУ НА ОБСЛУЖИВАНИЕ (ФОРМА 1)+++++++++++++++++++++++++++++++++++-->
+
         <section class="backgroundApplication">
             <div class="titleSendApplication">
                 Оставьте заявку на техническое обслуживание
@@ -95,7 +97,6 @@
             <form id="form" action="#" enctype="multipart/form-data" method="post">
 
                 <input type="text" name="name" id="name" placeholder="Ваше имя *" class="form_name _req">
-                <label for="name"></label>
 
                 <input type="tel" name="phone" id="phone" placeholder="Ваш телефон *" class="form_phone _req" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
 
@@ -103,7 +104,7 @@
 
                 <textarea name="text" cols="1" rows="1" id="comment" placeholder="Комментарий" class="form_comment _req"></textarea>
 
-                <div id="container_form">
+                <div id="container_format">
                     <input type="file" name="file" id="f" class="hide" multiple accept=".jpg, .jpeg, .png, .pdf, .doc, .xls">
                     <label  for = "f" id="label_form"><img src="img_service/attach.svg" alt="attach"><div>ПРИКРЕПИТЬ ФАЙЛ</div></label >
                     <div id="formats">JPG, PNG, PDF, DOC, XLS не более 5 Мб</div>
@@ -486,7 +487,7 @@
 
             <textarea name="text_2" cols="1" rows="1" id="comment_2" placeholder="Комментарий" class="form_comment_2 _req_2"></textarea>
 
-            <div id="container_form_2">
+            <div id="container_format_2">
                 <input type="file" name="file_2" id="f_2" class="hide_2" multiple accept=".jpg, .jpeg, .png, .pdf, .doc, .xls">
                 <label  for = "f_2" id="label_form_2"><img src="img_service/attach2.svg" alt="attach"><div>ПРИКРЕПИТЬ ФАЙЛ</div></label >
                 <div id="formats_2">JPG, PNG, PDF, DOC, XLS не более 5 Мб</div>
@@ -512,7 +513,7 @@
 
     <section class="backgroundApplication_2">
         <div class="titleSendApplication_2">
-            Оставьте заявку на техническое обслуживание
+            Оставьте заявку
         </div>
         <div id="successApplication_2">
             <img src="" alt="circleLogo" class="circleLogo">
@@ -547,8 +548,7 @@
                         <div class="contactTitle">
                             ООО «КомбоЛифт Сервис»
                         </div>
-                        <div class="contactDescription">
-                        </div>
+
                     </div>
 
                     <div class="oneContact2">
@@ -556,8 +556,7 @@
                         <div class="contactTitle">
                             8 (495) 175-70-83
                         </div>
-                        <div class="contactDescription">
-                        </div>
+
                     </div>
 
                     <div class="oneContact3">
@@ -565,8 +564,7 @@
                         <div class="contactTitle">
                             info@service-cl.ru
                         </div>
-                        <div class="contactDescription">
-                        </div>
+
                     </div>
 
                     <div class="oneContact4">
@@ -597,6 +595,11 @@
         </div>
 
     </section>
+
+    <div class="mapMobile">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7859.005297301557!2d37.72844514212735!3d55.777471839758206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5354077475b61%3A0xfcb34d7848cda1b4!2zMS3QuSDQmtC40YDQv9C40YfQvdGL0Lkg0L_QtdGALiwgMiwg0JzQvtGB0LrQstCwLCAxMDUxODc!5e0!3m2!1sru!2sru!4v1636247109253!5m2!1sru!2sru"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 
 
 
@@ -635,30 +638,34 @@
                             <img src="img_service/fb.svg">
                         </a>
                         <a href="" class="footIcon">
-                            <img src="img_service/fb.svg">
+                            <img src="img_service/vk.svg">
                         </a>
                         <a href="" class="footIcon">
-                            <img src="img_service/fb.svg">
+                            <img src="img_service/youtube.svg">
                         </a>
                         <a href="" class="footIcon">
-                            <img src="img_service/fb.svg">
+                            <img src="img_service/instagram.svg">
                         </a>
 
                     </div>
                 </div>
                 <div class="footElement5">
-                    <div>Пассажирские лифты</div>
-                    <div>Грузопассажирские лифты</div>
-                    <div>Коттеджные лифты</div>
-                    <div>Технический аудит </div>
-                    <div>Технический аудит </div>
-                    <div>Скоростные лифты</div>
-                    <div>Лифтовые инновации</div>
+                    <a href="" class="foot_services_link">Пассажирские лифты</a>
+                    <a href="" class="foot_services_link">Грузопассажирские лифты</a>
+                    <a href="" class="foot_services_link">Коттеджные лифты</a>
+                    <a href="" class="foot_services_link">Технический аудит </a>
+                    <a href="" class="foot_services_link">Технический аудит </a>
+                    <a href="" class="foot_services_link">Скоростные лифты</a>
+                    <a href="" class="foot_services_link">Лифтовые инновации</a>
                 </div>
                 <div class="footElement6">
-                    <div>
-                        Поиск по сайту
-                    </div>
+                    <form name="searchForm" id="searchForm">
+                        <input type="text" id="search" name="search" placeholder="Поиск по сайту">
+                        <button type="submit" id="searchButton">
+                            <img src="img_service/SearchIco.svg">
+                        </button>
+                    </form >
+
                 </div>
 
             </div>
