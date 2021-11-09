@@ -10,14 +10,445 @@
     <link rel="stylesheet" href="./style/aos.css">
     <!-- Стили страницы -->
     <link rel="stylesheet" href="./style/pages/page-home/index.css">
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <title>Комболифт</title>
 </head>
 <body>
 
-    
+    <div class="intro">
 
-    <footer></footer>
+        <div class="burger">
+            <div class="nav-burger">
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="intro__inner">
 
-    <script src="./js/index.js"></script>
+            <a href="#" class="intro__logo"><img src="img/Logo@2x.svg" alt="logo"></a>
+            <div class="intro__title">Контроль лифтовых систем</div>
+            <div class="intro__subtitle">Выполнение данного перечня работ в полном объёме производится компанией «КОМБО ЛИФТ СЕРВИС»</div>
+            <a href="#services" class="intro__arrow"><img src="img/scroll-down.svg" alt=""></a>
+            
+            <button class="button" data-scroll="#application">Отправить заявку</button>
+
+            <header class="header">
+
+                <nav class="nav">
+                    <a href="#services" class="nav__link">Услуги</a>
+                    <a href="#equipment" class="nav__link">Оборудование</a>
+                    <a href="#advantages" class="nav__link">Преимущества</a>
+                    <a href="#about" class="nav__link">О нас</a>
+                    <a href="#work" class="nav__link">Наши клиенты</a>
+                    <a href="#questions" class="nav__link">FAQ</a>
+                    <a href="#contcts" class="nav__link">Контакты</a>
+
+                </nav>
+
+            </header>
+
+        </div>
+    </div>
+
+
+    <section class="services" id="services">
+        <div class="services__inner">
+            <div class="container">
+                <h1 class="services__title">Услуги</h1>
+                <div class="services__text">Выполнение данного перечня работ в полном объёме производится компанией «КОМБО ЛИФТ СЕРВИС», также нами разработана уникальная система контроля качества за исполнением.</div>
+            </div>
+            <ul class="wrapper">
+                <li class="wrapper__item">
+                    <div class="wrapper__title">Техническое обслуживание</div>
+                </li>
+
+                <li class="wrapper__item">
+                    <div class="wrapper__title wrapper__title-active">Диспетчерский мониторинг</div>
+                    <p>лифтов и эскалаторов</p>
+                </li>
+
+                <li class="wrapper__item">
+                    <div class="wrapper__title">Работы капитального характера</div>
+                </li>
+
+                <li class="wrapper__item">
+                    <div class="wrapper__title">Подбор и поставка запасных частей</div>
+                </li>
+
+                <li class="wrapper__item">
+                    <div class="wrapper__title">Технический аудит</div>
+                </li>
+
+                <li class="wrapper__item">
+                    <div class="wrapper__title">Круглосуточная аварийная служба</div>
+                </li>
+
+                <li class="wrapper__item">
+                    <div class="wrapper__title">Программирование систем управления</div>
+                </li>
+
+                <li class="wrapper__item">
+                    <div class="wrapper__title">Контроль доступа</div>
+                </li>
+
+                <li class="wrapper__item">
+                    <div class="wrapper__title">Изготовление лифтовых запасных частей</div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section class="equipment" id="equipment">
+        <div class="equipment__inner">
+            <div class="container">
+                <h1 class="equipment__title">Поставка лифтового оборудования</h1>
+                <div class="equipment__text">Выполнение данного перечня работ в полном объёме производится компанией «КОМБО ЛИФТ СЕРВИС», также нами разработана уникальная система контроля качества за исполнением.</div>
+                
+                <ul class="equipment__wrapper">
+                    <li class="equipment__item">
+                        <div class="wrapper__title">Пассажирские лифты</div>
+                    </li>
+                    <li class="equipment__item">
+                        <div class="wrapper__title equipment__title-active">Грузопассажирские лифты</div>
+                    </li>
+                    <li class="equipment__item">
+                        <div class="wrapper__title">Грузовые лифты</div>
+                    </li>
+                    <li class="equipment__item">
+                        <div class="wrapper__title">Коттеджные лифты</div>
+                    </li>
+                    <li class="equipment__item">
+                        <div class="wrapper__title">Технический аудит</div>
+                    </li>
+                    <li class="equipment__item">
+                        <div class="wrapper__title">Панорамные лифты</div>
+                    </li>
+                    <li class="equipment__item">
+                        <div class="wrapper__title">Скоростные лифты</div>
+                    </li>
+                    <li class="equipment__item">
+                        <div class="wrapper__title">Контроль доступа</div>
+                    </li>
+                    <li class="equipment__item">
+                        <div class="wrapper__title">Лифтовые инновации</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages" id="advantages">
+       <img class="advantages__img" src="img/advant.jpg" alt="photo">
+        <div class="container">
+            <div class="advantages__inner">
+                <h1 class="advantages__title">Преимущества</h1>
+                <div class="advantages__block">
+                    <div class="advantages__item">
+                        <img src="http://via.placeholder.com/70x70" alt="picha">
+                        <div class="advantages__content">
+                            <div class="advantages__headers">Большой опыт</div>
+                            <div class="advantages__text">Более 15 лет мы добросовестно работаем в сфере технического обслуживания лифтов и эскалаторов</div>
+                        </div>
+                    </div>
+
+                    <div class="advantages__item">
+                        <img src="http://via.placeholder.com/70x70" alt="picha">
+                        <div class="advantages__content">
+                            <div class="advantages__headers">Высококлассный персонал</div>
+                            <div class="advantages__text">Все наши специалисты имеют высшее техническое образование и опыт работы не менее 10 лет</div>
+                        </div>
+                    </div>
+
+                    <div class="advantages__item">
+                        <img src="http://via.placeholder.com/70x70" alt="picha">
+                        <div class="advantages__content">
+                            <div class="advantages__headers">Современное оборудование</div>
+                            <div class="advantages__text">Мы работаем на оборудовании нового поколения, а также постоянно изучаем новые технологии</div>
+                        </div>
+                    </div>
+
+                    <div class="advantages__item">
+                        <img src="http://via.placeholder.com/70x70" alt="picha">
+                        <div class="advantages__content">
+                            <div class="advantages__headers">Собственная лаборатория</div>
+                            <div class="advantages__text">Все наши специалисты имеют высшее техническое образование и опыт работы не менее 10 лет</div>
+                        </div>
+                    </div>
+
+                    <div class="advantages__item">
+                        <img src="http://via.placeholder.com/70x70" alt="picha">
+                        <div class="advantages__content">
+                            <div class="advantages__headers">Сотрудничество с производителями из других стран</div>
+                            <div class="advantages__text">Мы можем запрашивать техническую документацию на оборудование</div>
+                        </div>
+                    </div>
+
+                    <div class="advantages__item">
+                        <img src="http://via.placeholder.com/70x70" alt="picha">
+                        <div class="advantages__content">
+                            <div class="advantages__headers">Адекватная стоимость</div>
+                            <div class="advantages__text">Мы не обманываем наших клиентов и выставляем объективные цены</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__inner">
+                <h1 class="about__title">О компании</h1>
+                <h2 class="about__suptitle">Мы любим свое дело</h2>
+                <div class="about__text">Нашей задачей было разработать систему контроля таким образом, чтобы мы могли точно понимать сколько оборудование, механизм или конкретный технический узел могут безопасно работать. Благодаря современным приборам, накопленному опыту и программному обеспечению мы можем выявить неисправность на ранней стадии и предотвратить аварию</div>
+                <div class="about__block">
+                    <div class="about__item">
+                        <div class="about__num">15</div>
+                        <div class="about__txt">лет на рынке</div>
+                    </div>
+
+                    <div class="about__item">
+                        <div class="about__num">65</div>
+                        <div class="about__txt">успешных проектов</div>
+                    </div>
+
+                    <div class="about__item">
+                        <div class="about__num">65</div>
+                        <div class="about__txt">успешных проектов</div>
+                    </div>
+
+                    <div class="about__item">
+                        <div class="about__num">15</div>
+                        <div class="about__txt">лет на рынке</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="application" id="application">
+        <img src="img/petr-magera-UlH5Bj0-9aU-unsplash.jpg" alt="photo" class="application__img">
+        <div class="container">
+            <div class="application__inner">
+                <h1 class="application__subtitle">Оставьте заявку</h1>
+
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="form__inner">
+                        <div class="form__left">
+                            <div class="form__item"><input type="text" placeholder="Олег" name="userName"></div>
+                            <div class="form__item"><input type="tel" placeholder="+7 (499) 423-35-66" name="userTel"></div>
+                            <div class="form__item"><input type="email" placeholder="oleg_kuznetsov@gmail.com" name="userMail"></div>
+                        </div>
+
+                        <div class="form__right">
+                            <textarea  name="userCom" placeholder="Добрый день, меня зовут Олег. В первую очередь хотелось бы ознакомить Вас с моим видением проекта. Я прилагаю к прикрепленным файлам всю имеющуюся у нас документацию, включая: инструкцию по эксплуатации данной модели лифта, дополнительно схему силового механизма в формате джипег. Дайте пожалуйста знать, как только ознакомитесь. По указанному номеру спросите Олега. В первую очередь хотелось бы ознакомить Вас с моим видением проекта. Я прилагаю к прикрепленным файлам всю документацию: инструкцию по эксплуатации  лифта, и т.д. Дайте пожалуйста знать, как только ознакомитесь. По указанному номеру спросите Олега. Жду ответа!"></textarea>
+                            <label>
+                                <p>
+                                    <img src="img/attach.svg" alt="picha">
+                                    <span>Прикрепить файл <span>JPG, PNG, PDF, DOC, XLS не более 5 Мб</span></span>
+                                    <input multiple type="file" name="userDoc" accept=".jpg, .jpeg, .png">
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+                <div class="application__bottom">
+                    <div class="application__bottom-text">
+                        <p>* — поля, обязательные для заполнения</p>
+                        <p>Нажимая кнопку "Отправить", Вы принимаете условия 
+                           <a href="#"> Политики конфиденциальности</a></p>
+                    </div>
+                    <button class="button">Отправить</button>
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="work" id="work">
+        <div class="container">
+            <div class="work__inner">
+                <h1 class="work__title">Наши объекты</h1>
+                <h2 class="work__suptitle">Галерея выполненных работ</h2>
+                <div class="work__block">
+                    <div class="work__item">
+                        <img src="img/1.jpg" alt="" class="work__img">
+                        <div class="work__text">Мосфильм (корпус 1)</div>
+                    </div>
+
+                    <div class="work__item">
+                        <img src="img/2.jpg" alt="" class="work__img">
+                        <div class="work__text">Мосфильм (корпус 1)</div>
+                    </div>
+
+                    <div class="work__item">
+                        <img src="img/3.jpg" alt="" class="work__img">
+                        <div class="work__text">Мосфильм (корпус 1)</div>
+                    </div>
+
+                    <div class="work__item">
+                        <img src="img/4.jpg" alt="" class="work__img">
+                        <div class="work__text">Мосфильм (корпус 1)</div>
+                    </div>
+
+                    <div class="work__item">
+                        <img src="img/5.jpg" alt="" class="work__img">
+                        <div class="work__text">Мосфильм (корпус 1)</div>
+                    </div>
+
+                    <div class="work__item">
+                        <img src="img/6.jpg" alt="" class="work__img">
+                        <div class="work__text">Мосфильм (корпус 1)</div>
+                    </div>
+                </div>
+                <div class="work__center"><button class="button button-work">Еще</button></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="questions" id="questions">
+        <div class="questions__img"></div>
+        <div class="container">
+                <div class="questions__inner">
+                    <div class="questions__title">Вопрос-ответ</div>
+                    <div class="questions__subtitle">Часто задаваемые вопросы</div>
+                    <div class="questions__block">
+                        <div class="questions__headers">Обслуживание</div>
+                        <div class="questions__content">
+                            <div class="questions__item questions__item-active">
+                                <div class="questions__text"><img src="http://via.placeholder.com/40x40" alt="picha" class="questions__pin">Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов?</div>
+                                <div class="questions__answer questions__answer-active">Конечно, Вы абсолютно правы!</div>
+                                <div class="questions__dagger"></div>
+                            </div>
+                            <div class="questions__item">
+                                <div class="questions__text"><img src="http://via.placeholder.com/40x40" alt="picha" class="questions__pin">Более 15 лет мы добросовестно работаем в сфере?</div>
+                                <div class="questions__answer">Конечно, Вы абсолютно правы!</div>
+                                <div class="questions__dagger"></div>
+                            </div>
+                            <div class="questions__item">
+                                <div class="questions__text"><img src="http://via.placeholder.com/40x40" alt="picha" class="questions__pin">Более 15 лет мы добросовестно работаем в сфере технического обслуживания лифтов и эскалаторов?</div>
+                                <div class="questions__answer">Конечно, Вы абсолютно правы!</div>
+                                <div class="questions__dagger"></div>
+                            </div>
+                            <div class="questions__item">
+                                <div class="questions__text"><img src="http://via.placeholder.com/40x40" alt="picha" class="questions__pin">Более 15 лет мы добросовестно работаем в сфере?</div>
+                                <div class="questions__answer">Конечно, Вы абсолютно правы!</div>
+                                <div class="questions__dagger"></div>
+                            </div>
+                        </div>
+                        <div class="questions__headers">Ремонт</div>
+                        <div class="questions__content">
+                            <div class="questions__item">
+                                <div class="questions__text questions__text_active"><img src="http://via.placeholder.com/40x40" alt="picha" class="questions__pin">Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов?</div>
+                                <div class="questions__answer">Конечно, Вы абсолютно правы!</div>
+                                <div class="questions__dagger"></div>
+                            </div>
+                            <div class="questions__item">
+                                <div class="questions__text questions__text_active"><img src="http://via.placeholder.com/40x40" alt="picha" class="questions__pin">Более 15 лет вы добросовестно работаете в сфере технического обслуживания лифтов и эскалаторов?</div>
+                                <div class="questions__answer">Конечно, Вы абсолютно правы!</div>
+                                <div class="questions__dagger"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="contcts" id="contcts">
+        <div class="container">
+            <div class="contcts__inner">
+                <div class="contcts__map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad569bb26dde41bcef77a5554e41db11df76e7f4655afed0fc4ff89bf461b28c8&amp;width=1156&amp;height=579&amp;lang=ru_RU&amp;scroll=true"></script></div>
+                <div class="contcts__title">Контакты</div>
+                <div class="contcts__box">
+                    <div class="contcts__row">
+                        <div class="contcts__item">
+                            <img src="img/Combined Shape.svg" alt="picha" class="contcts__img">
+                            <div class="contcts__headers">ООО «КомбоЛифт Сервис»</div>
+                            <div class="contcts__text"></div>
+                        </div>
+                        <div class="contcts__item">
+                            <img src="img/streamline-icon-phone-mobile-phone@48x48.svg" alt="picha" class="contcts__img">
+                            <a href="tel:84951757083" class="contcts__headers">8 (495) 175-70-83</a>
+                        </div>
+                        <div class="contcts__item">
+                            <img src="img/streamline-icon-mail-sign-at@48x48.svg" alt="picha" class="contcts__img">
+                            <a href="mailto:info@service-cl.ru" class="contcts__headers">info@service-cl.ru</a>
+                        </div>
+                    </div>
+
+                    <div class="contcts__col">
+                        <div class="contcts__item">
+                            <img src="img/streamline-icon-travel-map-triangle-flag@48x48 (1).svg" alt="" class="contcts__img">
+                            <div class="contcts__headers">Юр. адрес</div>
+                            <div class="contcts__text">117105, г. Москва, Варшавское ш., д1,  стр.1-2, этаж 3, комн.50 </div>
+                        </div>
+                        <div class="contcts__item">
+                            <img src="img/streamline-icon-travel-map-triangle-flag@48x48 (1).svg" alt="" class="contcts__img">
+                            <div class="contcts__headers">Факт. адрес</div>
+                            <div class="contcts__text">105118, г. Москва, 1-й Кирпичный переулок, д.2, 2-й этаж, пом. 3,5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <div class="footer__top">
+                        <div class="footer__logo">
+                            <img src="img/Logo@2x.svg" alt="logo">
+                            <div class="footer__text">Текст копирайта текст копирайта Текст копирайта © ООО Лифт, 2017-2021 г.</div>
+                        </div>
+                        <nav class="nav footer-nav">
+                            <div class="nav__col">
+                                <a href="#services" class="nav__link">Услуги</a>
+                                <a href="#equipment" class="nav__link">Оборудование</a>
+                                <a href="#advantages" class="nav__link">Преимущества</a>
+                            </div>
+                            <div class="nav__col">
+                                <a href="#about" class="nav__link">О нас</a>
+                                <a href="#work" class="nav__link">Наши клиенты</a>
+                                <a href="#questions" class="nav__link">FAQ</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="footer__bottom">
+                        <a href="#" class="footer__item">Пассажирские лифты</a>
+                        <a href="#" class="footer__item">Грузопассажирские лифты</a>
+                        <a href="#" class="footer__item">Коттеджные лифты</a>
+                        <a href="#" class="footer__item">Технический аудит </a>
+                        <a href="#" class="footer__item">Панорамные лифты</a>
+                        <a href="#" class="footer__item">Скоростные лифты</a>
+                        <a href="#" class="footer__item">Лифтовые инновации</a>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <a href="#" class="footer__num"><div class="footer__num">8 (495) 175-70-83</div></a>
+                    <a href="#" class="footer__email"><div class="footer__email">info@service-cl.ru</div></a>
+                    <div class="footer__social">
+                        <a href="#"><img src="img/fb.svg" alt="picha"></a>
+                        <a href="#"><img src="img/vk.svg" alt="picha"></a>
+                        <a href="#"><img src="img/youtube.svg" alt="picha"></a>
+                        <a href="#"><img src="img/Instagram.svg" alt="picha"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

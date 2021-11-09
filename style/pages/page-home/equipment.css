@@ -1,0 +1,101 @@
+.equipment {
+    background-color:rgba(96,98,128,0.85);
+    padding-right: 80px;
+    height: 100vh;
+    padding-top: 90px;
+    overflow: hidden;
+}
+.equipment__inner {
+    position: relative;
+}
+.equipment__title {
+    opacity: 0.25;
+    color: #F7F8F9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 97px;
+    text-transform: uppercase;
+}
+.equipment__text {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    letter-spacing: 0;
+    font-weight: 300;
+    line-height: 48px;
+    margin-top: 177px;
+    max-width: 704px;
+}
+.equipment__wrapper {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    right: 0;
+    bottom: -150px;
+
+}
+.equipment__item {
+    margin-bottom: 30px;
+    position: relative;
+    
+    text-align: right;
+}
+.equipment__item::before {
+    content: '';
+    display: block;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    width: 20px;
+    position: absolute;
+    right: -60px;
+    top: 50%;
+}
+.equipment__item:first-child::before {
+    content: '';
+    display: block;
+    border-right: 2px solid rgba(255,255,255,0.3);
+    border-top: 2px solid rgba(255,255,255,0.3);
+    width: 40px;
+    height: 100vh;
+    position: absolute;
+    right: -60px;
+    top: 50%;
+}
+.equipment__title-active {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 58px;
+    max-width: 470px;
+    text-align: right;
+}
+
+@media (max-width: 1024px) {
+    .equipment__wrapper {
+        font-size: 12px;
+        bottom: -300px;
+    }
+    .equipment__title-active {
+        font-size: 20px;
+    }
+    .equipment__text {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 400px;
+        left: 550px;
+    }
+    .equipment__title {
+        font-size: 50px;
+        line-height: 48px;
+    }
+    .equipment__title-active {
+        max-width: 200px;
+        line-height: 20px;
+    }
+}

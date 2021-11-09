@@ -1,6 +1,19 @@
 /* Элементы страницы */
-@import '../../interface.css';
-@import '../../footer.css';
-@import '../../header.css';
-
+@import 'interface.css';
+@import 'header.css';
+@import 'intro.css';
+@import 'container.css';
+@import 'btn.css';
+@import 'nav.css';
+@import 'services.css';
+@import 'wrapper.css';
+@import 'equipment.css';
+@import 'advantages.css';
+@import 'about.css';
+@import 'application.css';
+@import 'work.css';
+@import 'questions.css';
+@import 'contcts.css';
+@import 'footer.css';
+@import 'form.css';
 /* Секции страницы */

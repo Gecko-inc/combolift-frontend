@@ -1,0 +1,106 @@
+.form__item {
+    margin-bottom: 24px;
+    color: #222222;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 26px;
+    font-weight: 300;
+}
+:focus::-webkit-input-placeholder {
+    color: transparent
+}
+:focus::-moz-placeholder {
+    color: transparent
+}
+:focus:-moz-placeholder {
+    color: transparent
+}
+:focus:-ms-input-placeholder {
+    color: transparent
+}
+.form__right textarea::-webkit-scrollbar {
+    width: 8px;
+}
+.form__right textarea::-webkit-scrollbar-track {
+    border-radius: 9px;
+    background-color: #F7F8F9;
+}
+.form__right textarea::-webkit-scrollbar-thumb {
+    border-radius: 9px;
+    background-color: #DFDFDF;
+}
+.form__item input {
+    padding: 18px 23px 16px;
+    width: 392px;
+    border-radius: 8px;
+    border: none;
+}
+.form__inner {
+    display: flex;
+}
+.form__inner textarea {
+    height: 371px;
+    width: 465px;
+    max-width:465px;
+    max-height:371px;
+    padding: 17px 24px;
+    color: #222222;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 26px;
+    font-weight: 300;
+    border: none;
+}
+.form__right {
+    margin-left: 16px;
+}
+.form__right  input{
+    color: #D53D0F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+}
+.form__right label img{
+    display: inline-block;
+    cursor: pointer;
+}
+.form__right label p{
+    margin-top: 20px;
+}
+.form__right label span {
+    cursor: pointer;
+    color: #D53D0F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+.form__right label span span {
+    color: #828282;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+    font-weight: 300;
+    margin-left: 5px;
+    text-transform: none;
+}
+.form__right input[type=file] {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .form__inner textarea {
+        max-width:265px;
+        max-height:150px;
+        padding: 17px 24px;
+        font-size: 14px;
+
+    }
+}

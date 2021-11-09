@@ -1,0 +1,103 @@
+.advantages {
+    background-color: #53585E;
+    height: 1248px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.advantages__inner {
+    position: relative;
+    padding-left: 300px;
+}
+.advantages__img {
+    height: 882px;
+    width: 640px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+}
+.advantages__title {
+    opacity: 0.1;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+    text-align: right;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    top:-88px;
+}
+.advantages__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 87px 55px ;
+    height: 882px;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+.advantages__item {
+    width: 49%;
+    margin-bottom: 104px;
+    position: relative;
+}
+.advantages__headers {
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.advantages__text {
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-weight: 300;
+    max-width: 256px;
+}
+.advantages__item img {
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.advantages__content {
+    margin-left: 102px;
+    max-width: 262px;
+}
+
+
+@media (max-width: 1024px) {
+    .advantages__img {
+        width: 300px;
+        left: -150px;
+    }
+    .advantages__block {
+        max-height: 881px;
+        padding: 30px 35px ;
+    }
+    .advantages__inner {
+        padding-left: 130px;
+    }
+    .advantages__title {
+        font-size: 60px;
+        top:-68px;
+    }
+    .advantages__headers {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+    .advantages__content {
+        margin-left: 80px;
+    }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="49px" viewBox="0 0 49 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>32145CB5-4FFD-48D9-8ECA-A72916B39372</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0.200000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Desktop-1920px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Home-(design)-1920px-slides-2" transform="translate(-1075.000000, -8972.000000)">
+            <g id="Desktop/Contacts" transform="translate(0.000000, 8723.000000)">
+                <g id="streamline-icon-mail-sign-at@48x48" transform="translate(1077.000000, 247.000000)" filter="url(#filter-1)">
+                    <g transform="translate(0.000000, 4.000000)">
+                        <path d="M32.6746939,22.2857143 C32.6739079,27.9438677 28.1032415,32.5389348 22.4451725,32.5700032 C16.7871034,32.600758 12.1665031,28.0559052 12.1038951,22.3980981 C12.041287,16.7402911 16.5601834,12.0943026 22.217551,12 C24.9750723,11.9540349 27.6355408,13.0173794 29.6017234,14.9513295 C31.567906,16.8852795 32.6750769,19.5278099 32.6746939,22.2857143 L32.6746939,22.2857143 Z" id="Path" stroke="#000000" stroke-width="3.42857143"></path>
+                        <path d="M32.6746938,22.2857143 L32.6746938,26.7428571 C32.6746938,38.7085714 51.4289796,27.4285714 41.5889796,11.1771429 C37.5578886,4.29282338 30.1951172,0.0445694649 22.217551,0 C13.2065915,0.0278292999 5.09910563,5.47939154 1.67366902,13.813931 C-1.7517676,22.1484705 0.17899846,31.7256831 6.56611416,38.0820121 C12.9532299,44.438341 22.5396596,46.3228099 30.857551,42.8571429" id="Path" stroke="#000000" stroke-width="3.42857143"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

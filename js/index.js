@@ -1,5 +1,4 @@
 // Служебные переменные
-
 const d = document;
 const body = d.querySelector('body');
 
@@ -39,7 +38,7 @@ function bodyLock() {
 
 // 5) Скрипт для раздела FAQ - "Частозадаваемые вопросы"
 function findFaq(){
-	let faqBoxes = document.querySelectorAll('.faq-box')
+	let faqBoxes = document.querySelectorAll('.faqBox')
 	for(i = 0; i <= faqBoxes.length-1; i++){
 		faqBoxes[i].addEventListener('click', function(e) {
 			e.preventDefault();
@@ -58,4 +57,104 @@ function findFaq(){
 findFaq();
 
 // 9) AOS анимации инициализация (https://michalsnik.github.io/aos/)
-AOS.init();
+//AOS.init();
+
+
+
+// Скролл для кнопки
+
+$('[data-scroll]').on('click', function() {
+	let blockId = $(this).data('scroll');
+	let blockOffset = $(blockId).offset().top;
+
+	$("html, body").scrollTop(blockOffset)
+})
+
+
+// Таб для раздела questions
+
+const tabs = document.querySelectorAll('.questions__item'),
+	tabContent = document.querySelectorAll('.questions__answer'),
+	tabParent = document.querySelectorAll('.questions__content'),
+	dagger = document.querySelectorAll('.questions__dagger');
+
+
+function hideContent() {
+	tabContent.forEach((item) => {
+		item.classList.remove('questions__answer-active');
+	});
+	tabs.forEach((item) => {
+		item.classList.remove('questions__item-active');
+	});
+}
+
+function showContent(i = 0) {
+	tabContent[i].classList.add('questions__answer-active');
+    tabs[i].classList.add('questions__item-active');
+}
+
+/*tabParent.forEach((item) => {
+	item.addEventListener('click', (e) => {
+		const target = e.target;
+		if (target && target.classList.contains('questions__item')) {
+			tabs.forEach((item, i) => {
+				if (item === target) {
+                    hideContent();
+					showContent(i);
+                }
+			})	
+		}
+	})
+})
+*/
+tabs.forEach((item, i) => {
+	item.addEventListener('click', (e) => {
+		hideContent();
+		showContent(i);
+	})
+})
+hideContent();
+showContent();
+
+
+// Фиксируем шапку
+function onScrollHeader(nav, navfixed) { 
+  
+	const header = document.querySelector(nav);
+	const intro = document.querySelector('.intro');
+	let introH = intro.clientHeight;
+  
+	let prevScroll = window.pageYOffset 
+	let currentScroll 
+  
+	window.addEventListener('scroll', () => { 
+  
+	currentScroll = window.pageYOffset 
+	if (currentScroll > introH) {
+		const headerHidden = () => header.classList.contains(navfixed) 
+  
+		if (currentScroll > prevScroll && !headerHidden()) {
+			header.classList.add(navfixed)
+		}
+		if (currentScroll < prevScroll && headerHidden()) {
+			header.classList.remove(navfixed)
+		}
+	  
+		prevScroll = currentScroll
+	}
+	})
+  
+}
+onScrollHeader('.nav', 'nav-fixed');
+onScrollHeader('.burger', 'nav-burger-fixed');
+
+const burger = document.querySelector('.burger');
+const header = document.querySelector('.header');
+
+burger.addEventListener("click",(event) => {
+	if (header.style.display !== "block") {
+		header.style.display = 'block'
+	} else {
+		header.style.display = 'none';
+	}
+});

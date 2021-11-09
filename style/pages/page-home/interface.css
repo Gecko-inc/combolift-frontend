@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 15px;
+    position: relative;
+    color: #000;
+    overflow-x: hidden;
+}
+
+body._lock{
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+    
+img{
+    max-width: 100%;
+}
+
+/* Для ленивой загрузки изображений */
+img[data-src]{
+    opacity: 0;
+    transition: all 0.2s;
+}
+  
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 670px){     
+    section{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}  
+    
+
+@media (min-width: 992px){
+    section{
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+    .section-desr{
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+    
+            
+
+@media (min-width: 1300px){      
+    section{
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+}

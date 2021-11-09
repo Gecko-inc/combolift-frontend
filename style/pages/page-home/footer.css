@@ -1,0 +1,130 @@
+.footer {
+    padding-top: 50px;
+}
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__left {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-nav {
+    flex-wrap: wrap;
+}
+.footer__top {
+    display: flex;
+}
+.footer-nav {
+    margin-left: 200px;
+    padding: 0;
+    display: flex;
+}
+.footer-nav .nav__link{
+    color: #222222;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+    font-weight: 300;
+    margin-right: 0px;
+}
+.footer-nav .nav__link:hover {
+    color: #FA8745;
+}
+.footer-nav .nav__link:hover::after {
+    display: none;
+}
+.footer__right {
+    width: 30%;
+}
+.footer__text {
+    max-width: 288px;
+    opacity: 0.5;
+    color: #222222;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.footer__social img {
+    margin-right: 8px;
+}
+.footer__num {
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 32px;
+    text-align: right;
+    transition: .2s;
+}
+.footer__num:hover, .footer__email:hover {
+    color: #FA8745;
+}
+.footer__email {
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 32px;
+    text-align: right;
+    text-decoration: underline;
+    margin: 10px 0 22px;
+    transition: .2s;
+}
+.footer__social {
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__social a {
+    opacity: .5;
+    transition: opacity .2s linear;
+}
+.footer__social a:hover {
+    opacity: 1;
+}
+.footer__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.6;
+    color: #222222;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 15px;
+    font-weight: 300;
+    border-top: 1px solid rgba(0,0,0,0.15);
+    padding-top: 27px;
+
+}
+.footer__item {
+    padding: 8px;
+    background-color: rgba(0,0,0,0.05);
+    margin-right: 8px;
+    margin-bottom: 8px;
+    transition: all .2s linear;
+}
+.footer__item:hover {
+    color: #FFFFFF;
+    background-color: #FA8745;
+}
+
+@media (max-width: 1024px) {
+    .footer-nav {
+        margin-left: 100px;
+        width: 450px;
+    }
+    .footer__num {
+        font-size: 16px;
+    }
+    .footer__email {
+        font-size: 16px;
+    }
+}

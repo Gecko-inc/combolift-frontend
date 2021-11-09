@@ -1,0 +1,22 @@
+.header {
+    background-color:rgba(24,32,67,0.62);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+
+@media (max-width: 1024px) {
+    .header {
+        /*top: 60px;
+        left: 625px;
+        */
+        top: 60px;
+        right: 0;
+        height: 400px;
+        display: none;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,88 @@
+.intro{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../../img/glav.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(37,41,46,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.intro__logo img {
+    display: inline-block;
+}
+.intro__logo {
+    margin-bottom: 43px;
+}
+
+.intro__inner {
+    max-width: 681px;
+    text-align: center;
+}
+.intro__title {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.intro__subtitle {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+.intro__arrow {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.intro__arrow img {
+    display: inline-block;
+}
+
+/* MEDIA */
+
+@media (max-width: 1024px) {
+    .nav-burger {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 15px;
+        height: 35px;
+        display: block;
+    }
+    .nav-burger span, .nav-burger:after, .nav-burger:before{
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        background: #fff;
+        margin: 0 auto;
+    }
+    .nav-burger span{
+        top: 16px;
+        width: 12px;
+    }
+    .nav-burger:after, .nav-burger:before{
+        content: '';
+    }
+    .nav-burger:after{
+        bottom: 10px;
+        width: 13px;
+    }
+    .nav-burger:before{
+        top: 8px;
+    }
+}

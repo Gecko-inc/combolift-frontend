@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="49px" viewBox="0 0 35 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>23307EE5-1152-4A5C-B01E-A54C94AFA173</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0.200000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Desktop-1920px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Home-(design)-1920px-slides-2" transform="translate(-381.000000, -9131.000000)">
+            <g id="Desktop/Contacts" transform="translate(0.000000, 8723.000000)">
+                <g id="streamline-icon-travel-map-triangle-flag@48x48" transform="translate(381.000000, 410.000000)" filter="url(#filter-1)">
+                    <g transform="translate(-0.000000, 0.000000)">
+                        <line x1="1.71428571" y1="0" x2="1.71428571" y2="44.5714286" id="Path" stroke="#000000" stroke-width="3.42857143"></line>
+                        <polyline id="Path" stroke="#000000" stroke-width="3.42857143" points="1.71428571 0 32.5714286 15.4285714 1.71428571 30.8571429"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
