@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     error++;
 
                 }
-            }else {
+            }
+            else {
                 if (input.value === '') {
                     formAddError(input);
                     formAddErrorRed(input);
@@ -65,3 +66,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+
+
+// }else if (input.classList.contains('_tel')){
+//     if (input.value <= 10) {
+//         formAddError(input);
+//         formAddErrorRed(input);
+//         error++;
+//     }
+// }
+
+
+// function tel(input) {
+//     input.parentElement.classList.add('_red');
+//     input.classList.add('_red');
+// }

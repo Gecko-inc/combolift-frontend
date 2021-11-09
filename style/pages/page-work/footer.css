@@ -91,6 +91,7 @@
     /*opacity: 60%;*/
 }
 .foot_services_link:hover{
+    transition: 0.4s;
     background-color: #FA8745;
     color: white;
     /*opacity: 60%;*/
@@ -122,6 +123,10 @@
     line-height: 16px;
     height: 16px;
     color: #222222;
+}
+.footLinks:hover {
+    transition: 0.4s;
+    color: #FA8745;
 }
 
 #footerPhone {

@@ -1,0 +1,142 @@
+/*++++++++++++++++++++++++ВОПРОСЫ*/
+
+#questionsTitle {
+    font-size: 40px;
+    line-height: 48px;
+    height: 48px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #222222;
+    margin-bottom: 72px;
+}
+
+.questionWrapper {
+    margin-bottom: 140px;
+}
+
+.accordion {
+    max-height: 624px; /* высота нашего блока */
+    background: white; /* цвет фона, белый */
+    overflow-y: scroll; /* прокрутка по вертикали */
+    padding-right: 6px;
+}
+
+
+.accordion::-webkit-scrollbar {
+    width: 9px;
+}
+.accordion::-webkit-scrollbar-track {
+    background: #F7F8F9;
+    border-radius: 8px;
+}
+.accordion::-webkit-scrollbar-thumb{
+    background: #DFDFDF;
+    border-radius: 8px;
+    width: 6px;
+    border: 3px solid #F7F8F9;
+    height: 100px;
+}
+
+.accordion-item {
+    margin-bottom: 16px;
+    font-family:'Roboto';
+    color: #222222;
+}
+
+.accordion-item_trigger {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 26px;
+    gap: 26px;
+    background-color: #F7F8F9;
+    font-weight: 300;
+    font-size: 18px;
+    min-height: 88px;
+}
+
+.accordion-item_content{
+
+    display: none;
+
+}
+
+
+.accordionLogo {
+    min-height: 50px;
+    min-width: 50px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.accordionText {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    justify-self: start;
+    font-size: 18px;
+}
+
+
+.plusIcon, .minusIcon {
+    height: 24px;
+    width: 24px;
+}
+
+
+.open {
+    display: block;
+    grid-column-start: 12;
+    grid-column-end: 12;
+}
+.close {
+    display: none;
+    grid-column-start: 12;
+    grid-column-end: 12;
+}
+
+._active .open {
+    display: none;
+    grid-column-start: 12;
+    grid-column-end: 12;
+}
+._active .close {
+    display: block;
+    grid-column-start: 12;
+    grid-column-end: 12;
+}
+
+
+
+
+.accordion-item_active .accordion-item_content{
+
+    padding: 20px 20px 20px 15%;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    display: flex;
+    align-items: start;
+    background-color: #FFFFFF;
+    min-height: 88px;
+
+}
+
+.accordion-item_active .accordion-item_trigger{
+    background-color: #FFFFFF;
+    min-height: 88px;
+    font-size: 18px;
+
+}
+
+.questionWrapper {
+    position: relative;
+}
+#whiteBack {
+    width: 100%;
+    height: 160px;
+    background-image: linear-gradient(rgb(255,255,255,0), rgba(255,255,255));
+    position: absolute;
+    bottom: 0;
+}

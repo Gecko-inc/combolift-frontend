@@ -1,0 +1,105 @@
+#equipment{
+    position: relative;
+    margin-top: 144px;
+}
+
+#equip_title {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #222222;
+    line-height: 48px;
+    min-height: 96px;
+    margin-bottom: 72px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+
+
+#rrr {
+    text-transform: uppercase;
+    position: absolute;
+    z-index: -1;
+    top: -48px;
+    right: 0;
+    font-size: 80px;
+    color: #ECEEF0;
+    line-height: 97px;
+    min-height: 97px;
+    font-weight: 800;
+    font-family: 'Montserrat';
+
+}
+
+#goodsGrid {
+    display: grid;
+    /*grid-template-rows: repeat(3, 489px);*/
+    grid-template-columns: repeat(auto-fill, minmax(auto, 370px)); /*391px*/
+    justify-content: space-around;
+    column-gap: 8px;
+    row-gap: 64px;
+    margin-bottom: 80px;
+
+
+}
+#goodsGrid> div, p{
+    /*background-color: peru;*/
+    /*max-width: 370px; !*391px*!*/
+    /*min-height: 489px;*/
+}
+
+.oneGood{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.goodTitle {
+    font-size: 24px;
+    color: #222222;
+    line-height: 30px;
+    min-height: 60px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.goodDescription {
+    font-size: 15px;
+    color: #666666;
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 22px;
+    min-height: 110px;
+}
+
+.goodPhoto{
+
+}
+
+
+
+/*=================ссылки вперед и назад в товарах*/
+#scrollGoods{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-size: 13px;
+    height: 16px;
+    line-height: 16px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-bottom: 160px;
+    text-decoration: none;
+}
+
+#leftLink, #rightLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+    cursor: pointer;
+    color: #D53D0F;
+}

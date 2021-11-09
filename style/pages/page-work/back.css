@@ -1,0 +1,11 @@
+#home_arrow {
+    text-transform: uppercase;
+    max-width: 105px;
+    font-size: 13px;
+    color: #C9C9C9;
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 0 64px 0;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}

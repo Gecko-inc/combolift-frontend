@@ -156,17 +156,30 @@
     }
 
     #form, #form_2{
-        grid-template-rows: repeat(7, 55px);
+        grid-template-rows: repeat(7, minmax(55px, auto));
         gap: 20px;
     }
 
     .form_name, .form_phone, .form_email, .form_name_2, .form_phone_2, .form_email_2 {
-        grid-column-end: 8;
+        grid-column-end: 7;
     }
 
     #comment, #comment_2 {
+        resize: vertical;
+        max-height: 400px;
         grid-row-end: 5;
+        min-height: 205px;
+        overflow-y: scroll; /* прокрутка по вертикали */
     }
+
+    /*#comment::-webkit-scrollbar, #comment_2::-webkit-scrollbar {*/
+    /*    width: 4px;               !* ширина scrollbar *!*/
+    /*    height: 236px;*/
+    /*}*/
+
+    /*#comment::-webkit-scrollbar-track, #comment_2::-webkit-scrollbar {*/
+    /*    background: #DFDFDF;        !* цвет дорожки *!*/
+    /*}*/
 
     #container_format, #container_format_2 {
         grid-row-start: 5;
@@ -193,7 +206,7 @@
     }
 
     #comment, #container_format, #comment_2, #container_format_2 {
-        grid-column-start: 8;
+        grid-column-start: 7;
     }
 
     #submitApplication,  #submitApplication_2{

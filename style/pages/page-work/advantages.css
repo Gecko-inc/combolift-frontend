@@ -1,0 +1,64 @@
+/*=========================ПРЕИМУЩЕСТВА*/
+
+.backgroundAdvantages {
+    background-color: #F7F8F9;
+    background-size: cover;
+    width: 100%;
+    padding: 0 12% 0 12%;
+    min-height: 711px;
+    border: 1px solid transparent;
+    margin-bottom: 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#advantagesGrid {
+    padding-top: 145px;
+    padding-bottom: 145px;
+    display: grid;
+    /*grid-template-rows: repeat(3, 489px);*/
+    grid-template-columns: repeat(auto-fill, minmax(auto, 354px));
+    justify-content: space-around;
+    column-gap: 43px; /*62px*/
+    row-gap: 104px;
+
+}
+
+.advantage {
+    max-width: 354px;
+    min-height: 124px;
+    display: flex;
+    flex-direction: row;
+    gap: 22px; /*62px*/
+
+}
+.advantage > img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.advantageText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.advantageTitle {
+    font-size: 24px;
+    width: min-content;
+    line-height: 30px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #222222;
+}
+.advantageDescription {
+    width: 256px;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #666666;
+}

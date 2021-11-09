@@ -1,0 +1,55 @@
+
+
+/*<!--MENU-->*/
+
+.burger-menu{
+    display: none;
+}
+#head{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(24,32,67,0.8);
+    min-height: 84px;
+    column-gap: 5%;
+    width: 100%;
+    padding: 0 12% 0 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > .logo {
+    min-width: 133px;
+}
+
+header > #menu {
+    width: 90%;
+}
+
+header > #menu > #ul_menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 10px;
+    padding: 5px 0 5px 0;
+    text-transform: uppercase;
+}
+
+header > #menu > #ul_menu > li{
+    display: inline;
+    color: #FFFFFF;
+    font-size: 15px;
+    height: 19px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+
+}
+header > #menu > #ul_menu > li > a{
+    color: #FFFFFF;
+}
+header > #menu > #ul_menu > li > a:hover{
+    transition: 0.4s;
+    color: #FA8745;
+}

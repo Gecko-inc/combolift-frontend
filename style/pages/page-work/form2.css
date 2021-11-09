@@ -194,30 +194,34 @@ input, textarea {
     background-color: #FFEBE8;
 }
 
+.form_name_2._red_2:focus::-webkit-input-placeholder, .form_phone_2._red_2:focus::-webkit-input-placeholder, .form_email_2._red_2:focus::-webkit-input-placeholder,.form_comment_2._red_2:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
 /*Chrome 57 и Firefox 51*/
 .form_name_2._red_2::placeholder, .form_phone_2._red_2::placeholder, .form_email_2._red_2::placeholder, .form_comment_2._red_2::placeholder{
     color: #921202;
 }
-/*!*Firefox новые версии*!*/
-/*.form_name._red::-moz-placeholder, .form_phone._red::-moz-placeholder, .form_email._red::-moz-placeholder, .form_comment._red::-moz-placeholder{*/
-/*    color: #921202;*/
-/*}*/
-/*!*Internet Explorer*!*/
-/*.form_name._red:-ms-input-placeholder, .form_phone._red:-ms-input-placeholder, .form_email._red:-ms-input-placeholder, .form_comment._red:-ms-input-placeholder{*/
-/*    color: #921202;*/
-/*}*/
-/*!*Microsoft Edge*!*/
-/*.form_name._red::-ms-input-placeholder, .form_phone._red::-ms-input-placeholder, .form_email._red::-ms-input-placeholder, .form_comment._red::-ms-input-placeholder{*/
-/*    color: #921202;*/
-/*}*/
-/*!*Chrome, Opera и Safari*!*/
-/*.form_name._red::-webkit-input-placeholder, .form_phone._red::-webkit-input-placeholder, .form_email._red::-webkit-input-placeholder, .form_comment._red::-webkit-input-placeholder{*/
-/*    color: #921202;*/
-/*}*/
-/*!*Firefox с 4 по 19 версии*!*/
-/*.form_name._red-moz-placeholder, .form_phone._red-moz-placeholder, .form_email._red-moz-placeholder, .form_comment._red-moz-placeholder{*/
-/*    color: #921202;*/
-/*}*/
+/*Firefox новые версии*/
+.form_name_2._red_2::-moz-placeholder, .form_phone_2._red_2::-moz-placeholder, .form_email_2._red_2::-moz-placeholder, .form_comment_2._red_2::-moz-placeholder{
+    color: #921202;
+}
+/*Internet Explorer*/
+.form_name_2._red_2:-ms-input-placeholder, .form_phone_2._red_2:-ms-input-placeholder, .form_email_2._red_2:-ms-input-placeholder, .form_comment_2._red_2:-ms-input-placeholder{
+    color: #921202;
+}
+/*Microsoft Edge*/
+.form_name_2._red_2::-ms-input-placeholder, .form_phone_2._red_2::-ms-input-placeholder, .form_email_2._red_2::-ms-input-placeholder, .form_comment_2._red_2::-ms-input-placeholder{
+    color: #921202;
+}
+/*Chrome, Opera и Safari*/
+.form_name_2._red_2::-webkit-input-placeholder, .form_phone_2._red_2::-webkit-input-placeholder, .form_email_2._red_2::-webkit-input-placeholder, .form_comment_2._red_2::-webkit-input-placeholder{
+    color: #921202;
+}
+/*Firefox с 4 по 19 версии*/
+.form_name_2._red_2-moz-placeholder, .form_phone_2._red_2-moz-placeholder, .form_email_2._red_2-moz-placeholder, .form_comment_2._red_2-moz-placeholder{
+    color: #921202;
+}
 
 /*валидация полей КОНЕЦ*/
 
