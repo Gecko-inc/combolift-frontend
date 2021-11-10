@@ -9,7 +9,7 @@
 
     background-color: #F7F8F9;
     min-height: 325px;
-    padding: 58px 12% 29px 12%;
+    padding: 58px 18% 29px 18%;
     display: grid;
     column-gap: 10px;
     grid-template-columns: repeat(12,1fr);
