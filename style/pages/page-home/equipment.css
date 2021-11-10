@@ -37,7 +37,6 @@
     position: absolute;
     right: 0;
     bottom: -150px;
-
 }
 .equipment__item {
     margin-bottom: 30px;
@@ -97,5 +96,25 @@
     .equipment__title-active {
         max-width: 200px;
         line-height: 20px;
+    }
+}
+
+@media (max-width: 415px) {
+    .equipment__text {
+        display: none;
+    }
+    .equipment__title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .equipment__wrapper {
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 24px;
+        position: absolute;
+        right: 0;
+        bottom: -400px;
     }
 }

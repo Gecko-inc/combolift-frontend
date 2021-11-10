@@ -104,3 +104,24 @@
 
     }
 }
+
+@media (max-width: 550px) {
+    .form__inner {
+        display: block;
+    }
+    .form__right {
+        margin-left: 0;
+    }
+    .form__inner textarea {
+        height: 200px;
+        width: 465px;
+        max-width:100%;
+        max-height:200px;
+        padding: 17px 24px;
+        font-size: 14px;
+    }
+    .application__bottom button {
+        margin-left: 100px;
+        margin-top: 30px ;
+    } 
+}

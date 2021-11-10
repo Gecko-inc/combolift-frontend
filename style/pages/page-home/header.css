@@ -6,17 +6,45 @@
     z-index: 1000;
     width: 100%;
 }
-
+.header-active {
+    background-color:rgba(24,32,67,0.62);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    transition: .4s;
+    width: 0%;
+}
+.hidden {
+    overflow: hidden;
+}
 
 @media (max-width: 1024px) {
     .header {
         /*top: 60px;
         left: 625px;
         */
-        top: 60px;
+        position: absolute;
+        top: 0;
         right: 0;
-        height: 400px;
-        display: none;
         border-radius: 5px;
+        background-color: rgba(24,32,67,1);
+        transform: translateX(100%);
+        width: 100%;
+        transition: .4s;
+        opacity: .1;
+
     }
+    .header-active {
+        position: fixed;
+        top: 0px;
+        right: 0;
+        border-radius: 5px;
+        background-color: rgba(24,32,67,1);
+        width: 100%;
+        transform: translateX(0%);
+        transition: .4s;
+        opacity: 1;
+    }
+    
 }

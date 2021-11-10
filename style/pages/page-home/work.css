@@ -96,3 +96,33 @@
         max-height: 200px;
     }
 }
+
+@media (max-width: 550px) {
+    .work__title {
+        font-size: 38px;
+        right: 0;
+        top: -50px;
+        z-index: 0;
+    }
+    .work__inner {
+        padding-top: 0px;
+    }
+    .work__item {
+        width: 43%;
+        position: relative;
+        max-height: 150px;
+        overflow: hidden;
+    }
+    .work__item:nth-child(5) {
+        display: none;
+    }
+    .work__item:nth-child(6) {
+        display: none;
+    }
+    .work__block {
+        height: 340px;
+    }
+    .work__text {
+        font-size: 22px;
+    }
+}

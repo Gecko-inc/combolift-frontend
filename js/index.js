@@ -148,13 +148,22 @@ function onScrollHeader(nav, navfixed) {
 onScrollHeader('.nav', 'nav-fixed');
 onScrollHeader('.burger', 'nav-burger-fixed');
 
+// Отображаем адпативное меню
 const burger = document.querySelector('.burger');
 const header = document.querySelector('.header');
+const link = document.querySelectorAll('.nav__link');
 
-burger.addEventListener("click",(event) => {
-	if (header.style.display !== "block") {
-		header.style.display = 'block'
-	} else {
-		header.style.display = 'none';
-	}
+
+burger.addEventListener("click",(e) => {
+
+	header.classList.toggle('header-active');
+	body.classList.toggle('hidden');
 });
+
+link.forEach((item) => {
+	item.addEventListener('click', () =>{
+		header.classList.remove('header-active')
+		body.classList.remove('hidden');
+	})
+})
+

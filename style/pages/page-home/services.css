@@ -56,3 +56,9 @@
     top: 40%;
    }
 }
+
+@media (max-width: 550px) {
+    .services__text {
+        display: none;
+    }
+}
