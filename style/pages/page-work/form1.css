@@ -6,8 +6,8 @@
     background-blend-mode: color;
     background-size: cover;
     width: 100%;
-    padding: 0 12% 0 12%;
-    height: 589px;
+    padding: 80px 12% 80px 12%;
+    height: auto;
     border: 1px solid transparent;
 }
 
@@ -18,13 +18,13 @@
     max-height: 80px;
     line-height: 40px;
     color: #FFFFFF;
-    margin: 80px 0 44px 0;
+    margin: 0 0 44px 0;
 }
 
 #form{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, 60px);
+    grid-template-rows: repeat(4, minmax(60px, auto));
     gap: 24px;
 
 }
@@ -56,6 +56,8 @@
     padding-right: 25px;
 
 }
+/**/
+
 
 .form_name {
     grid-row-start: 1;
@@ -90,10 +92,10 @@
 
 .form_comment::-webkit-scrollbar, .form_comment_2::-webkit-scrollbar {
     width: 7px;
-    padding-right: 8px;
+    /*padding-right: 8px;*/
 }
 .form_comment::-webkit-scrollbar-track, .form_comment_2::-webkit-scrollbar-track {
-    background: #F7F8F9;
+    background: transparent;
     border-top-right-radius: 8px;
     border-top-left-radius: 0;
 }
@@ -160,7 +162,11 @@
     padding: 0;
 
 }
-input, textarea {
+input {
+    border-radius: 8px;
+    height: 60px;
+}
+textarea {
     width: 100%;
     height: 100%;
     border-radius: 8px;
@@ -232,12 +238,22 @@ input, textarea {
     z-index: -1;
 }
 
+/**/
 #container_format {
     display: flex;
-    height: 24px;
+    flex-direction: column;
+    height: auto;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 447px;
+    gap: 10px;
+}
+/**/
+.send {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
 }
 
 #label_form {
@@ -255,17 +271,34 @@ input, textarea {
     cursor: pointer;
 
 }
+/**/
 #formats {
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 14px;
-    width: 251px;
-    height: 24px;
+    width: auto;
+    height: auto;
     line-height: 24px;
     color: #ACACAC;
 }
+.file_preview {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+}
 
-
+.file {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 
 

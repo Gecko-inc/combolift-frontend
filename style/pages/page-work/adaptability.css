@@ -1,6 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap');
 
 
+@media screen and (max-width: 1400px) {
+
+
+    .form_name_2 {
+        grid-column-end: 5;
+    }
+    .form_phone_2 {
+        grid-column-end: 5;
+    }
+
+    .form_email_2 {
+        grid-column-end: 5;
+    }
+    .form_comment_2 {
+        grid-column-start: 5;
+        grid-column-end: 13;
+
+    }
+
+    #container_format_2 {
+        grid-column-start: 5;
+        grid-column-end: 13;
+    }
+
+    #recapture_2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #explanation_2 {
+        grid-column-start: 4;
+        grid-column-end: 11;
+
+    }
+
+    #submitApplication_2 {
+        grid-column-start: 11;
+        grid-column-end: 13;
+    }
+
+}
+
+
+
+
 @media screen and (max-width: 991px) {
 
 
@@ -158,6 +203,10 @@
     #form, #form_2{
         grid-template-rows: repeat(7, minmax(55px, auto));
         gap: 20px;
+    }
+
+    input {
+        height: 55px;
     }
 
     .form_name, .form_phone, .form_email, .form_name_2, .form_phone_2, .form_email_2 {
@@ -471,6 +520,10 @@
         gap: 20px;
     }
 
+    input {
+        height: 50px;
+    }
+
     .form_name, .form_name_2 {
         grid-row-start: 1;
         grid-column-start: 1;
@@ -501,7 +554,7 @@
     }
 
     #container_format, #container_format_2 {
-        height: 60px;
+        height: auto;
         grid-row-start: 5;
         grid-column-start: 1;
         grid-row-end: 5;
@@ -597,9 +650,22 @@
     }
 
     #goodsGrid {
-        grid-template-columns: repeat(auto-fill, minmax(auto, 270px));
-        row-gap: 34px;
+        display: flex;
+        justify-content: flex-start;
+        height: auto;
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
         margin-bottom: 70px;
+    }
+
+    .oneGood {
+        height: 100%;
+        width: 75%;
+        flex-shrink: 0;
+        scroll-snap-align:start;
+        scroll-snap-stop: normal;
     }
 
     .goodTitle {
@@ -608,7 +674,7 @@
     }
 
     #scrollGoods {
-        margin-bottom: 70px;
+        margin-bottom: 90px;
         gap: 100px;
     }
 
@@ -627,7 +693,8 @@
 
     /*=========================ПРЕИМУЩЕСТВА*/
     .backgroundAdvantages {
-        margin-bottom: 55px;
+        margin-bottom: 50px;
+        min-height: auto;
     }
 
     .advantageTitle {
@@ -635,15 +702,26 @@
     }
 
     #advantagesGrid {
-        grid-template-columns: repeat(auto-fill, minmax(auto, 260px));
-        row-gap: 34px;
-        column-gap: 20px;
+        display: flex;
+        justify-content: flex-start;
+        height: auto;
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
         padding: 65px 0;
     }
-
+    .advantage {
+        height: 100%;
+        width: 75%;
+        flex-shrink: 0;
+        scroll-snap-align:start;
+        scroll-snap-stop: normal;
+    }
     .advantageText {
         gap: 15px;
     }
+
 
 
 
