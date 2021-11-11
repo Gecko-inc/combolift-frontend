@@ -16,9 +16,7 @@
 }
 .intro__logo img {
     display: inline-block;
-}
-.intro__logo {
-    margin-bottom: 43px;
+    padding-bottom: 43px;
 }
 
 .intro__inner {

@@ -6,9 +6,6 @@
     position: relative;
     z-index: 0;
 }
-.equipment__inner {
-   
-}
 .equipment__title {
     opacity: 0.25;
     color: #F7F8F9;
@@ -20,6 +17,17 @@
     text-transform: uppercase;
     position: relative;
     z-index: 900000;
+}
+.equipment__titles {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    transition: all .4s;
+    cursor: pointer;
+}
+.equipment__titles-active {
+    font-size: 40px;
+    transition: all .4s;
 }
 .equipment__text {
     color: #FFFFFF;
@@ -41,10 +49,6 @@
     z-index: 1000;
 }
 .equipment__wrapper {
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    letter-spacing: 0;
     line-height: 24px;
     position: absolute;
     right: 100px;
@@ -69,7 +73,6 @@
 .equipment__item {
     margin-bottom: 30px;
     position: relative;
-    
     text-align: right;
 }
 .equipment__item::before {

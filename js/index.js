@@ -170,10 +170,12 @@ link.forEach((item) => {
 
 //tab services 
 
-const items = document.querySelectorAll('.wrapper__item');
+
+
 const tabText = document.querySelectorAll('.services__text');
 const img = document.querySelectorAll('.services__img');
-const titles = document.querySelectorAll('.wrapper__title')
+const titles = document.querySelectorAll('.wrapper__title');
+
 
 function hide() {
     titles.forEach((item) => {
@@ -189,7 +191,6 @@ function hide() {
     })
 
 }
-
 
 function show(i = 0) {
     titles[i].classList.add('wrapper__title-active');
@@ -209,7 +210,57 @@ titles.forEach((item, i) => {
     })
 })
 
-currentTab.classList.add('services__text-active');
-show(1)
+show(1);
+
+
+
+
+
+
+
+const eqtitles = document.querySelectorAll('.equipment__titles');
+const eqtabText = document.querySelectorAll('.equipment__text');
+const eqimg = document.querySelectorAll('.equipment__img');
+
+
+function eqhide() {
+    eqtitles.forEach((item) => {
+        item.classList.remove('equipment__titles-active');
+    })
+
+    eqtabText.forEach((item) => {
+        item.classList.remove('equipment__text-active');
+    })
+
+	eqimg.forEach((item) => {
+        item.classList.remove('equipment__img-active');
+    })
+
+}
+
+
+
+function eqshow(i = 0) {
+    eqtitles[i].classList.add('equipment__titles-active');
+}
+
+eqtitles.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        let tabid = item.getAttribute('data-tab');
+        let currentTab = document.querySelector(tabid);
+
+		let tabidImg = item.getAttribute('eqdata-img');
+        let currentTabImg = document.querySelector(tabidImg);
+		
+        eqhide();
+        eqshow(i);
+
+        currentTab.classList.add('equipment__text-active');
+		currentTabImg.classList.add('equipment__img-active');
+		
+    })
+})
+
+eqshow(1);
 
 
