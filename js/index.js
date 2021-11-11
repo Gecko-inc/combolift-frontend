@@ -167,3 +167,49 @@ link.forEach((item) => {
 	})
 })
 
+
+//tab services 
+
+const items = document.querySelectorAll('.wrapper__item');
+const tabText = document.querySelectorAll('.services__text');
+const img = document.querySelectorAll('.services__img');
+const titles = document.querySelectorAll('.wrapper__title')
+
+function hide() {
+    titles.forEach((item) => {
+        item.classList.remove('wrapper__title-active');
+    })
+
+    tabText.forEach((item) => {
+        item.classList.remove('services__text-active');
+    })
+
+	img.forEach((item) => {
+        item.classList.remove('services__img-active');
+    })
+
+}
+
+
+function show(i = 0) {
+    titles[i].classList.add('wrapper__title-active');
+}
+
+titles.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        let tabid = item.getAttribute('data-tab');
+        let currentTab = document.querySelector(tabid);
+		let tabidImg = item.getAttribute('data-img');
+        let currentTabImg = document.querySelector(tabidImg);
+        hide();
+        show(i);
+        currentTab.classList.add('services__text-active');
+		currentTabImg.classList.add('services__img-active');
+		
+    })
+})
+
+currentTab.classList.add('services__text-active');
+show(1)
+
+

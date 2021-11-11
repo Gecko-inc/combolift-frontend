@@ -1,10 +1,21 @@
 .wrapper {
+    height: 100vh;
+    position: relative;
+    z-index: 5;
+}
+.wrapper__title {
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     letter-spacing: 0;
     line-height: 24px;
-    height: 100vh;
+    transition: all .6s;
+    cursor: pointer;
+}
+.wrapper__item p {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 .wrapper__item {
     position: relative;
@@ -33,11 +44,12 @@
 .wrapper__title-active {
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
-    font-size: 44px;
+    font-size: 40px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 48px;
-    max-width: 386px;
+    max-width: 500px;
+    transition: all .4s;
 }
 
 @media (max-width: 1024px) {
