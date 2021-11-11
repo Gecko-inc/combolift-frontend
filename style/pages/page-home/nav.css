@@ -2,6 +2,8 @@
     padding: 34px 0;
     transition: 1s;
     width: 100%;
+    z-index: 1000;
+    position: relative;
 }
 .nav__link {
     color: #FFFFFF;
@@ -14,6 +16,7 @@
     transition: all 0.5s ease;
     position: relative;
     padding-bottom: 20px;
+    z-index: 1000;
 }
 .nav__link:last-child {
     margin-right: 0px;
@@ -75,6 +78,8 @@
         flex-direction: column;
         background-color: rgba(24,32,67,1);
         margin-top: 100px;
+        position: relative;
+        z-index: 10001;
     }
     .nav__link::after {
         content: none;

@@ -52,6 +52,17 @@
     transition: all .4s;
 }
 
+@media (max-width: 890px) {
+    .wrapper__title {
+        max-width: 300px;
+        font-size: 18px;
+    }
+    .wrapper__title-active {
+        font-size: 30px;
+        max-width: 300px;
+    }
+}
+
 @media (max-width: 1024px) {
     .wrapper {
         font-size: 12px;

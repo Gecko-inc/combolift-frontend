@@ -141,7 +141,27 @@
     }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 800px) {
+    .equipment__text {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 300px;
+        left: 7%;
+    }
+}
+
+@media (max-width: 680px) {
+    .equipment__text {
+        font-size: 16px;
+        line-height: 30px;
+        max-width: 200px;
+        left: 7%;
+    }
+}
+
+
+
+@media (max-width: 550px) {
     .equipment__text {
         display: none;
     }

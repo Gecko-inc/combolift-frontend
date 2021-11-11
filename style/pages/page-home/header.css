@@ -3,7 +3,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: 10000000;
+    z-index: 1000;
     width: 100%;
 }
 .header-active {
@@ -11,7 +11,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: 10000000;
+    z-index: 1000;
     transition: .4s;
     width: 0%;
 }
@@ -33,12 +33,14 @@
         width: 100%;
         transition: .4s;
         opacity: .1;
+        z-index: 10000;
 
     }
     .header-active {
         position: fixed;
         top: 0px;
         right: 0;
+        z-index: 10000;
         border-radius: 5px;
         background-color: rgba(24,32,67,1);
         width: 100%;
