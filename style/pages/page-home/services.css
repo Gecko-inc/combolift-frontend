@@ -119,11 +119,20 @@
         z-index: 10;
         top: 45%;
     }
+    .services__title {
+        
+        left: 45%;
+    }
+        
 }
 
 
 @media (max-width: 550px) {
     .services__text {
         display: none;
+    }
+    .services__title {
+        
+        left: 25%;
     }
 }
