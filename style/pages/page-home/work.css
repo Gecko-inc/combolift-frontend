@@ -97,6 +97,13 @@
     }
 }
 
+@media (max-width: 620px) {
+    .work__text {
+        font-size: 22px;
+        left: 20px;
+    }
+}
+
 @media (max-width: 550px) {
     .work__title {
         font-size: 38px;

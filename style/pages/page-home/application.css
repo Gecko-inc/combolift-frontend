@@ -33,7 +33,7 @@
 .application__bottom {
     margin-top: 10px;
     text-align: right;
-    margin-right: 370px;
+    max-width: 860px;
 }
 .form__inner input {
     outline:none;

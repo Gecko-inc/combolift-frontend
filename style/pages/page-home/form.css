@@ -101,7 +101,18 @@
         max-height:150px;
         padding: 17px 24px;
         font-size: 14px;
-
+    }
+    .form__inner textarea {
+        max-width: 400px;
+    }
+}
+@media (max-width: 720px) {
+    .form__item input {
+        width: 300px;
+    }
+    .form__inner textarea {
+        max-width: 220px;
+        padding: 12px 12px;
     }
 }
 
