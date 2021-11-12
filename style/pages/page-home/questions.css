@@ -51,14 +51,14 @@
     max-width: 965px;
     overflow-y:scroll;
 }
-.questions__block::-webkit-scrollbar {
+.questions__block::-webkit-scrollbar{
     width: 8px;
 }
-.questions__block::-webkit-scrollbar-track {
+.questions__block::-webkit-scrollbar-track{
     border-radius: 9px;
     background-color: #F7F8F9;
 }
-.questions__block::-webkit-scrollbar-thumb {
+.questions__block::-webkit-scrollbar-thumb{
     border-radius: 9px;
     background-color: #DFDFDF;
 }

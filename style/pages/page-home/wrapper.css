@@ -52,14 +52,14 @@
     transition: all .4s;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 920px) {
     .wrapper__title {
-        max-width: 300px;
+        max-width: 250px;
         font-size: 18px;
     }
     .wrapper__title-active {
         font-size: 30px;
-        max-width: 300px;
+        max-width: 250px;
     }
 }
 
